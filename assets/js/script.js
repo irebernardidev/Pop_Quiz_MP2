@@ -42,9 +42,11 @@ function startQuiz() {
     score = 0;
     currentQuestionIndex = 0;
     startButton.hidden = true;
+    nextButton.hidden = false;
     questionContainerElement.hidden = false;
     showQuestion();
 }
+
 
 function showQuestion() {
     startTimer();
