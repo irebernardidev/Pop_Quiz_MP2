@@ -20,6 +20,8 @@
                 <h1 id="quiz-title" class="quiz-title">Pop Pub Quiz</h1>
                 <div id="score-container" class="score-container">
                     <p>Score: <span id="score">0</span></p>
+                    <p id="questions-left"></p>
+
                 </div>
             </div>
     
@@ -32,9 +34,20 @@
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
+                <label for="questions">Number of Questions:</label>
+<select id="questions">
+  <option value="5">5</option>
+  <option value="10" selected>10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+</select>
+
                 <input id="timer" type="number" min="5" max="60" value="10">
                 <label for="timer">seconds/question</label>
                 <button id="start-btn" class="start-btn">Start Quiz</button>
+            </div>
+            <div id="progress-container" class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
             </div>
     
             <div id="question-container" class="question-container" hidden>
