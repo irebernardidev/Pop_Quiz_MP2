@@ -8,6 +8,7 @@ const questionElement = document.getElementById('question');
 const choiceContainerElement = document.getElementById('choice-container');
 const scoreElement = document.getElementById('score');
 const nextButton = document.getElementById('next-btn');
+const quitButton = document.getElementById('quit-btn');
 const timerCountdownElement = document.getElementById('timer-countdown');
 const progressBar = document.getElementById('progress-bar');
 const questionsLeftElement = document.getElementById('questions-left');
@@ -43,10 +44,10 @@ function startQuiz() {
     currentQuestionIndex = 0;
     startButton.hidden = true;
     nextButton.hidden = false;
+    quitButton.hidden = false;
     questionContainerElement.hidden = false;
     showQuestion();
 }
-
 
 function showQuestion() {
     startTimer();
@@ -91,6 +92,18 @@ nextButton.addEventListener('click', () => {
     }
 });
 
+quitButton.addEventListener('click', () => {
+    let confirmQuit = confirm('Are you sure you want to quit the quiz?');
+    if (confirmQuit) {
+        clearInterval(timer);
+        questionContainerElement.hidden = true;
+        startButton.hidden = false;
+        nextButton.hidden = true;
+        quitButton.hidden = true;
+        scoreElement.innerText = '';
+    }
+});
+
 function endQuiz() {
     const results = document.createElement('div');
     const percentageScore = (score / questionsElement.value) * 100;
@@ -123,19 +136,6 @@ function endQuiz() {
     startButton.addEventListener('click', function() {
         location.reload();
     });
-
-    let leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-    const playerName = prompt("Enter your name for the leaderboard:");
-    leaderboard.push({
-        name: playerName,
-        score: score,
-        date: new Date()
-    });
-    leaderboard.sort((a, b) => b.score - a.score);
-    localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
-
-    // Redirect to leaderboard
-    window.location.href = "leaderboard.html";
 }
 
 function startTimer() {

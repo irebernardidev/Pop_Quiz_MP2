@@ -58,7 +58,7 @@ body {
     background: #FFCDD2;
 }
 
-.next-btn {
+.next-btn, .quit-btn, .start-btn {
     padding: 10px 20px;
     background: #0288D1;
     color: #fff;
