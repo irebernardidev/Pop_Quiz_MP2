@@ -1,0 +1,86 @@
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.quiz-header, .quiz-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.question-container {
+    margin: 20px 0;
+}
+
+.choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice {
+    margin: 10px;
+    padding: 10px;
+    background: #e1f5fe;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice.selected {
+    background: #90caf9;
+}
+
+.next-btn {
+    padding: 10px 20px;
+    background: #039be5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.settings-container select,
+.settings-container input,
+.settings-container button {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.settings-container label {
+    flex-basis: 100%;
+}
+
+.timer-countdown {
+    text-align: center;
+    font-size: 1.2em;
+    color: #f00;
+}
+
+@media (max-width: 600px) {
+    .choice-container {
+        flex-direction: column;
+    }
+    .settings-container select,
+    .settings-container input,
+    .settings-container button {
+        flex-basis: 100%;
+    }
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Pop Pub Quiz</title>
+    </head>
+    <body>
+        <div id="quiz-container" class="quiz-container">
+            <div class="quiz-header">
+                <h1 id="quiz-title" class="quiz-title">Pop Pub Quiz</h1>
+                <div id="score-container" class="score-container">
+                    <p>Score: <span id="score">0</span></p>
+                </div>
+            </div>
+    
+            <div id="settings-container" class="settings-container">
+                <select id="category" name="category">
+                    <!-- Category options will be filled by JavaScript -->
+                </select>
+                <select id="difficulty" name="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <input id="timer" type="number" min="5" max="60" value="10">
+                <label for="timer">seconds/question</label>
+                <button id="start-btn" class="start-btn">Start Quiz</button>
+            </div>
+    
+            <div id="question-container" class="question-container" hidden>
+                <p id="timer-countdown" class="timer-countdown"></p>
+                <p id="question" class="question"></p>
+                <div id="choice-container" class="choice-container">
+                </div>
+            </div>
+    
+            <div class="quiz-footer">
+                <button id="next-btn" class="next-btn" disabled>Next</button>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+    
+    
+    </html>
