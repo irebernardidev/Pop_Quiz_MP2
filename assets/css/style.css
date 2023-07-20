@@ -1,6 +1,6 @@
 body {
     background: #f5f5f5;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
@@ -10,15 +10,24 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background: #fff;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+    animation: pop-in .6s ease-in-out forwards;
 }
 
 .quiz-header, .quiz-footer {
     text-align: center;
     padding: 20px;
+    background: #03A9F4;
+    color: white;
+    border-radius: 10px;
 }
 
 .question-container {
     margin: 20px 0;
+    padding: 15px;
+    background: #E3F2FD;
+    border-radius: 10px;
 }
 
 .choice-container {
@@ -28,24 +37,40 @@ body {
 }
 
 .choice {
-    margin: 10px;
+    flex-basis: 48%;
+    margin: 10px 0;
     padding: 10px;
-    background: #e1f5fe;
+    background: #BBDEFB;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
-.choice.selected {
-    background: #90caf9;
+.choice:hover {
+    transform: scale(1.02);
+}
+
+.choice.selected.correct {
+    background: #C8E6C9;
+}
+
+.choice.selected.wrong {
+    background: #FFCDD2;
 }
 
 .next-btn {
     padding: 10px 20px;
-    background: #039be5;
+    background: #0288D1;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.next-btn:hover {
+    transform: scale(1.02);
+    background: #0277BD;
 }
 
 .progress-container {
@@ -53,22 +78,25 @@ body {
     height: 20px;
     background: #f3f3f3;
     border-radius: 10px;
+    margin: 20px 0;
 }
 
 .progress-bar {
     height: 100%;
-    background: #0f0;
+    background: #4CAF50;
     width: 0%;
     transition: width 1s linear;
     border-radius: 10px;
 }
-
 
 .settings-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding: 20px;
+    background: #ECEFF1;
+    border-radius: 10px;
 }
 
 .settings-container select,
@@ -98,5 +126,73 @@ body {
     .settings-container button {
         flex-basis: 100%;
     }
+    .leaderboard-container {
+        padding: 10px;
+    }
 }
 
+/* Animation for pop in effect */
+@keyframes pop-in {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Leaderboard style */
+
+.leaderboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.leaderboard-header {
+    text-align: center;
+    padding: 20px;
+    background: #03A9F4;
+    color: white;
+    border-radius: 10px;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-list li {
+    padding: 10px;
+    background: #E3F2FD;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background: #0288D1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.back-btn:hover {
+    transform: scale(1.02);
+    background: #0277BD;
+}
