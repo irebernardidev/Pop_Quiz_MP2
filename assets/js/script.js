@@ -18,7 +18,6 @@ const timerElement = document.getElementById('timer');
 const questionsElement = document.getElementById('questions');
 const startButton = document.getElementById('start-btn');
 
-// Fetch quiz categories
 fetch('https://opentdb.com/api_category.php')
     .then(response => response.json())
     .then(data => {
@@ -31,7 +30,6 @@ fetch('https://opentdb.com/api_category.php')
     });
 
 startButton.addEventListener('click', () => {
-    // Fetch questions from API
     fetch(`https://opentdb.com/api.php?amount=${questionsElement.value}&category=${categoryElement.value}&difficulty=${difficultyElement.value}&type=multiple`)
         .then(response => response.json())
         .then(data => {
@@ -52,7 +50,7 @@ function showQuestion() {
     startTimer();
     questionElement.innerText = decodeHTML(questions[currentQuestionIndex].question);
     const choices = [...questions[currentQuestionIndex].incorrect_answers, questions[currentQuestionIndex].correct_answer];
-    choices.sort(() => Math.random() - 0.5); // Shuffle choices
+    choices.sort(() => Math.random() - 0.5);
     choiceContainerElement.innerHTML = '';
     choices.forEach(answer => {
         const button = document.createElement('button');
@@ -120,21 +118,32 @@ function endQuiz() {
     startButton.innerText = 'Restart Quiz';
     startButton.hidden = false;
 
-    // Restart game on click
     startButton.addEventListener('click', function() {
         location.reload();
     });
-}
 
+    let leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+    const playerName = prompt("Enter your name for the leaderboard:");
+    leaderboard.push({
+        name: playerName,
+        score: score,
+        date: new Date()
+    });
+    leaderboard.sort((a, b) => b.score - a.score);
+    localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+
+    // Redirect to leaderboard
+    window.location.href = "leaderboard.html";
+}
 
 function startTimer() {
     let timeLeft = parseInt(timerElement.value);
     timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
-    progressBar.style.width = '100%'; // Reset the progress bar
+    progressBar.style.width = '100%';
     timer = setInterval(() => {
         timeLeft--;
         timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
-        progressBar.style.width = `${(timeLeft / parseInt(timerElement.value)) * 100}%`; // Update the progress bar
+        progressBar.style.width = `${(timeLeft / parseInt(timerElement.value)) * 100}%`;
         if (timeLeft <= 0) {
             clearInterval(timer);
             timeUp();
@@ -150,7 +159,6 @@ function timeUp() {
     timerCountdownElement.innerText = 'Time is up!';
 }
 
-// Function to decode HTML special characters
 function decodeHTML(html) {
     const txt = document.createElement('textarea');
     txt.innerHTML = html;
