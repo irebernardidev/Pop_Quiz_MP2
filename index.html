@@ -11,62 +11,57 @@
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+      />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Pop Pub Quiz</title>
-    </head>
-    <body>
-        <div id="quiz-container" class="quiz-container">
-            <div class="quiz-header">
-                <h1 id="quiz-title" class="quiz-title">Pop Pub Quiz</h1>
-                <div id="score-container" class="score-container">
-                    <p>Score: <span id="score">0</span></p>
-                    <p id="questions-left"></p>
-
-                </div>
-            </div>
-    
-            <div id="settings-container" class="settings-container">
-                <select id="category" name="category">
-                    <!-- Category options will be filled by JavaScript -->
-                </select>
-                <select id="difficulty" name="difficulty">
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-                <label for="questions">Number of Questions:</label>
-<select id="questions">
-  <option value="5">5</option>
-  <option value="10" selected>10</option>
-  <option value="15">15</option>
-  <option value="20">20</option>
-</select>
-
-                <input id="timer" type="number" min="5" max="60" value="10">
-                <label for="timer">seconds/question</label>
-                <button id="start-btn" class="start-btn">Start Quiz</button>
-            </div>
-            <div id="progress-container" class="progress-container">
-                <div id="progress-bar" class="progress-bar"></div>
-            </div>
-    
-            <div id="question-container" class="question-container" hidden>
-                <p id="timer-countdown" class="timer-countdown"></p>
-                <p id="question" class="question"></p>
-                <div id="choice-container" class="choice-container">
-                </div>
-            </div>
-    
-            <div class="quiz-footer">
-                <button id="next-btn" class="next-btn" hidden>Next</button>
-                <button id="quit-btn" class="quit-btn" hidden>Quit</button>
-            </div>
-          
-        
-        
-        <script src="assets/js/script.js"></script>
-    </body>
-    
-    
-    </html>
+  </head>
+  <body>
+    <div id="quiz-container" class="quiz-container">
+    <div class="quiz-header">
+      <h1 id="quiz-title" class="quiz-title">Pop Pub Quiz</h1>
+      <div id="score-container" class="score-container">
+        <p>Score: <span id="score">0</span></p>
+        <p id="questions-left"></p>
+      </div>
+    </div>
+    <div id="settings-container" class="settings-container">
+      <select id="category" name="category">
+        <!-- Category options will be filled by JavaScript -->
+      </select>
+      <select id="difficulty" name="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <label for="questions">Number of Questions:</label>
+      <select id="questions">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+      <input id="timer" type="number" min="5" max="60" value="10">
+      <label for="timer">seconds/question</label>
+      <button id="start-btn" class="start-btn">Start Quiz</button>
+    </div>
+    <div id="progress-container" class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <div id="question-container" class="question-container" hidden>
+      <p id="timer-countdown" class="timer-countdown"></p>
+      <p id="question" class="question"></p>
+      <div id="choice-container" class="choice-container">
+      </div>
+    </div>
+    <div id="congratulation" style="display: none;">
+      <h1>Congratulations!</h1>
+      <p>You scored 100%!</p>
+    </div>
+    <audio id="congrats-music" src="path/to/your/music.mp3" type="audio/mpeg"></audio>
+    <div class="quiz-footer">
+      <button id="next-btn" class="next-btn" hidden>Next</button>
+      <button id="quit-btn" class="quit-btn" hidden>Quit</button>
+    </div>
+    <script src="assets/js/game.js"></script>
+  </body>
+</html>

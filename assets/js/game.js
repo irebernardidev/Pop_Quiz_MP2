@@ -106,27 +106,36 @@ nextButton.addEventListener('click', () => {
 });
 
 quitButton.addEventListener('click', () => {
-    let isConfirmed = confirm('Are you sure you want to exit the game?');
-    if(isConfirmed) {
-      window.location.href = 'index.html';
-    }
-  });
-  
+  let isConfirmed = confirm('Are you sure you want to exit the game?');
+  if (isConfirmed) {
+    window.location.href = 'index.html';
+  }
+});
 
 function endQuiz() {
   const userName = prompt('Enter your name for the leaderboard:');
-  
+
   let scores = JSON.parse(localStorage.getItem('scores')) || [];
-  
-  scores.push({ name: userName, score: score });
+
+  scores.push({
+    name: userName,
+    score: score,
+    time: getDateTime()
+  });
   localStorage.setItem('scores', JSON.stringify(scores));
-  
+
+
   const results = document.createElement('div');
   const percentageScore = (score / questionsElement.value) * 100;
 
   let message;
   if (percentageScore === 100) {
     message = "Incredible! You've answered every question correctly.";
+    const congratsElement = document.getElementById('congratulation');
+    const congratsMusic = document.getElementById('congrats-music');
+    congratsElement.style.display = 'block'; // Show the congratulation message
+    congratsElement.classList.add('congrats'); // Add the animation
+    congratsMusic.play(); // Play the music
   } else if (percentageScore >= 75) {
     message = "Well done! You've scored highly.";
   } else if (percentageScore >= 50) {
@@ -150,7 +159,7 @@ function endQuiz() {
   startButton.innerText = 'Restart Quiz';
   startButton.hidden = false;
 
-  startButton.addEventListener('click', function() {
+  startButton.addEventListener('click', function () {
     location.reload();
   });
 
@@ -159,44 +168,47 @@ function endQuiz() {
   }, 5000);
 }
 
-function startTimer() {
-    let timeLeft = parseInt(timerElement.value);
-    timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
-  
-    progressBar.style.width = '100%';
-  
-    timer = setInterval(() => {
-      timeLeft--;
-      timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
-  
-      let percentageLeft = (timeLeft / parseInt(timerElement.value)) * 100;
-      progressBar.style.width = `${percentageLeft}%`;
-  
-      if (timeLeft <= 0) {
-        clearInterval(timer);
-        timeUp();
-      }
-    }, 1000);
-  }
-  
+function getDateTime() {
+  const now = new Date();
+  return `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+}
 
-  function timeUp() {
-    Array.from(choiceContainerElement.children).forEach(button => {
-      button.disabled = true;
-    });
-  
-    timerCountdownElement.innerText = 'Time is up!';
-  
-    setTimeout(() => {
-      currentQuestionIndex++;
-      if (currentQuestionIndex < questions.length) {
-        showQuestion();
-      } else {
-        endQuiz();
-      }
-    }, 2000);  // this will wait for 2 seconds before moving to the next question
-  }
-  
+function startTimer() {
+  let timeLeft = parseInt(timerElement.value);
+  timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
+
+  progressBar.style.width = '100%';
+
+  timer = setInterval(() => {
+    timeLeft--;
+    timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
+
+    let percentageLeft = (timeLeft / parseInt(timerElement.value)) * 100;
+    progressBar.style.width = `${percentageLeft}%`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      timeUp();
+    }
+  }, 1000);
+}
+
+function timeUp() {
+  Array.from(choiceContainerElement.children).forEach(button => {
+    button.disabled = true;
+  });
+
+  timerCountdownElement.innerText = 'Time is up!';
+
+  setTimeout(() => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      showQuestion();
+    } else {
+      endQuiz();
+    }
+  }, 2000); // this will wait for 2 seconds before moving to the next question
+}
 
 function decodeHTML(encodedString) {
   const textarea = document.createElement('textarea');

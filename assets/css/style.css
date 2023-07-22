@@ -2,97 +2,99 @@ body {
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
     color: #333;
-}
-
-.quiz-container,
-.leaderboard-container {
+  }
+  
+  .quiz-container,
+  .leaderboard-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
     border-radius: 15px;
-}
-
-.quiz-header,
-.quiz-footer,
-.leaderboard-header {
+  }
+  
+  .quiz-header,
+  .quiz-footer,
+  .leaderboard-header {
     text-align: center;
     padding: 20px;
     background: #03A9F4;
     color: white;
     border-radius: 10px;
-}
-
-.question-container {
+  }
+  
+  .question-container {
     margin: 20px 0;
     padding: 15px;
     background: #E3F2FD;
     border-radius: 10px;
-}
-
-.choice-container {
+  }
+  
+  .choice-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.choice {
+  }
+  
+  .choice {
     flex-basis: 48%;
     margin: 10px 0;
     padding: 10px;
     background: #BBDEFB;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.choice:hover {
+  }
+  
+  .choice:hover {
     transform: scale(1.02);
-}
-
-.choice.correct {
-    background-color: #C8E6C9; /* green for correct */
-}
-
-.choice.wrong {
-    background-color: #FFCDD2; /* red for wrong */
-}
-
-.next-btn,
-.quit-btn,
-.start-btn,
-.back-btn {
+  }
+  
+  .choice.correct {
+    background-color: #C8E6C9;
+    /* green for correct */
+  }
+  
+  .choice.wrong {
+    background-color: #FFCDD2;
+    /* red for wrong */
+  }
+  
+  .next-btn,
+  .quit-btn,
+  .start-btn,
+  .back-btn {
     padding: 10px 20px;
     background: #0288D1;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.next-btn:hover,
-.back-btn:hover {
+  }
+  
+  .next-btn:hover,
+  .back-btn:hover {
     transform: scale(1.02);
     background: #0277BD;
-}
-
-.progress-container {
+  }
+  
+  .progress-container {
     width: 100%;
     height: 20px;
     background: #f3f3f3;
     border-radius: 10px;
     margin: 20px 0;
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     height: 100%;
     background: #4CAF50;
     width: 0%;
     transition: width 1s linear;
     border-radius: 10px;
-}
-
-.settings-container {
+  }
+  
+  .settings-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -100,67 +102,90 @@ body {
     padding: 20px;
     background: #ECEFF1;
     border-radius: 10px;
-}
-
-.settings-container select,
-.settings-container input,
-.settings-container button {
+  }
+  
+  .settings-container select,
+  .settings-container input,
+  .settings-container button {
     flex-basis: 48%;
     margin-bottom: 10px;
     padding: 5px;
-}
-
-.settings-container label {
+  }
+  
+  .settings-container label {
     flex-basis: 100%;
-}
-
-.timer-countdown {
+  }
+  
+  .timer-countdown {
     text-align: center;
     font-size: 1.2em;
     color: #f00;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 600px) {
+  
     .choice-container,
     .settings-container {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .settings-container select,
     .settings-container input,
     .settings-container button,
     .choice {
-        flex-basis: 100%;
+      flex-basis: 100%;
     }
-}
-
-.leaderboard-list {
+  }
+  
+  .leaderboard-list {
     list-style: none;
     padding: 0;
-}
-
-.leaderboard-list li {
+  }
+  
+  .leaderboard-list li {
     padding: 10px;
     background: #E3F2FD;
     margin-bottom: 10px;
     border-radius: 10px;
-}
-
-.back-btn {
+  }
+  
+  .back-btn {
     margin: 20px 0;
     display: block;
     width: 100%;
     text-align: center;
-}
-
-@keyframes pop-in {
+  }
+  
+  @keyframes pop-in {
     0% {
-        transform: scale(0);
+      transform: scale(0);
     }
+  
     80% {
-        transform: scale(1.2);
+      transform: scale(1.2);
     }
+  
     100% {
-        transform: scale(1);
+      transform: scale(1);
     }
-}
+  }
+  
+  @keyframes congrats-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .congrats {
+    animation: congrats-animation 2s;
+  }

@@ -2,26 +2,23 @@
 const leaderboardList = document.getElementById('leaderboard-list');
 const backButton = document.getElementById('back-to-game');
 
-// Display leaderboard immediately when the page loads
-displayLeaderboard();
-
-// Set up event listener for back button
-backButton.addEventListener('click', backToGame);
-
 function displayLeaderboard() {
-  leaderboardList.innerHTML = ''; // Clear the leaderboard list
+  leaderboardList.innerHTML = '';
 
-  // Get the leaderboard from localStorage or initialize as an empty array if not found
-  const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-  leaderboard.sort((a, b) => b.score - a.score); // Sort scores in descending order
-  
-  // Append each leaderboard entry to the leaderboard list
+  let leaderboard = JSON.parse(localStorage.getItem('scores')) || [];
+
+  leaderboard.sort((a, b) => b.score - a.score || new Date(a.time) - new Date(b.time));
+
   leaderboard.forEach((entry, index) => {
     const li = document.createElement('li');
-    li.innerHTML = `${index + 1}. ${entry.name} - ${entry.score}`;
+    li.innerHTML = `${index + 1}. ${entry.name} - ${entry.score} (on ${entry.time})`;
     leaderboardList.appendChild(li);
   });
+
+  backButton.addEventListener('click', backToGame);
 }
+
+displayLeaderboard();
 
 function backToGame() {
   // Redirect to the game page
