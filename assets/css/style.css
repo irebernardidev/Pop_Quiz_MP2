@@ -4,18 +4,19 @@ body {
     color: #333;
 }
 
-.quiz-container {
+.quiz-container,
+.leaderboard-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background: #fff;
     border-radius: 15px;
-    transition: all .2s ease-in-out;
-    animation: pop-in .6s ease-in-out forwards;
 }
 
-.quiz-header, .quiz-footer {
+.quiz-header,
+.quiz-footer,
+.leaderboard-header {
     text-align: center;
     padding: 20px;
     background: #03A9F4;
@@ -43,32 +44,34 @@ body {
     background: #BBDEFB;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .2s ease-in-out;
 }
 
 .choice:hover {
     transform: scale(1.02);
 }
 
-.choice.selected.correct {
-    background: #C8E6C9;
+.choice.correct {
+    background-color: #C8E6C9; /* green for correct */
 }
 
-.choice.selected.wrong {
-    background: #FFCDD2;
+.choice.wrong {
+    background-color: #FFCDD2; /* red for wrong */
 }
 
-.next-btn, .quit-btn, .start-btn {
+.next-btn,
+.quit-btn,
+.start-btn,
+.back-btn {
     padding: 10px 20px;
     background: #0288D1;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .2s ease-in-out;
 }
 
-.next-btn:hover {
+.next-btn:hover,
+.back-btn:hover {
     transform: scale(1.02);
     background: #0277BD;
 }
@@ -118,49 +121,17 @@ body {
 }
 
 @media (max-width: 600px) {
-    .choice-container {
+    .choice-container,
+    .settings-container {
         flex-direction: column;
     }
+
     .settings-container select,
     .settings-container input,
-    .settings-container button {
+    .settings-container button,
+    .choice {
         flex-basis: 100%;
     }
-    .leaderboard-container {
-        padding: 10px;
-    }
-}
-
-/* Animation for pop in effect */
-@keyframes pop-in {
-    0% {
-        transform: scale(0);
-    }
-    80% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Leaderboard style */
-
-.leaderboard-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background: #fff;
-    border-radius: 15px;
-}
-
-.leaderboard-header {
-    text-align: center;
-    padding: 20px;
-    background: #03A9F4;
-    color: white;
-    border-radius: 10px;
 }
 
 .leaderboard-list {
@@ -173,26 +144,23 @@ body {
     background: #E3F2FD;
     margin-bottom: 10px;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .back-btn {
-    padding: 10px 20px;
-    background: #0288D1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     margin: 20px 0;
     display: block;
     width: 100%;
     text-align: center;
-    transition: all .2s ease-in-out;
 }
 
-.back-btn:hover {
-    transform: scale(1.02);
-    background: #0277BD;
+@keyframes pop-in {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
