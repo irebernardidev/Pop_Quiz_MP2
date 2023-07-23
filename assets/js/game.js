@@ -76,7 +76,12 @@ function selectAnswer(e) {
 
   // Remove the event listener to prevent multiple selections
   selectedButton.removeEventListener('click', selectAnswer);
-
+  
+  /// Disable all buttons once a selection has been made
+  Array.from(choiceContainerElement.children).forEach(button => {
+    button.disabled = true;
+  });
+  
   if (selectedButton.innerText === correctAnswer) {
     selectedButton.classList.add('correct');
     score++;
