@@ -151,8 +151,6 @@ body {
   margin-top: 1rem;
 }
 
-
-
 .congrats {
   animation: congrats 2s linear infinite;
 }
@@ -162,6 +160,44 @@ body {
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
+
+
+/* Extra small devices (portrait phones, less than 360px) */
+@media (max-width: 359px) { 
+  .quiz-container, #leaderboard-container {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem auto;
+  }
+
+  .quiz-header, .quiz-footer, .leaderboard-header {
+    padding: 10px;
+  }
+
+  .leaderboard-list li {
+    padding: 5px 0;
+  }
+
+  .question-container {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .choice {
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  .next-btn, .quit-btn, .start-btn, .back-btn {
+    padding: 5px 10px;
+  }
+
+  .settings-container select,
+  .settings-container input {
+    padding: 0.25rem;
+  }
+}
+
 
 /* Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
