@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html>
+<head>
+  <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -13,56 +13,39 @@
       referrerpolicy="no-referrer"
       />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Pop Pub Quiz</title>
-  </head>
-  <body>
-    <div id="quiz-container" class="quiz-container">
-    <div class="quiz-header">
-      <h1 id="quiz-title" class="quiz-title">Pop Pub Quiz</h1>
-      <div id="score-container" class="score-container">
-        <p>Score: <span id="score">0</span></p>
-        <p id="questions-left"></p>
-      </div>
+    <title>Welcome to the Pop Quiz!</title>
+</head>
+<body>
+  <!-- Outer Container -->
+  <div id="outer-container">
+    <h2>Welcome to the Pop Pub Quiz!</h2>
+    <p>The Pop Pub Quiz is an exciting and fun-filled trivia game that puts your knowledge to the test on various pop culture topics. From music and movies to sports and history, there's a category for everyone. Battle your way through different levels of difficulty and aim to top the leaderboard. Are you ready to test your pop culture prowess?</p>
+
+    <p>Use the buttons below to navigate to the page you would like to view. You can return to this home page from any
+      page on the site simply by clicking on the Pop Quiz title at the top of each page.</p>
+
+    <div class="btn-group">
+      <button id="open-modal" class="btn">How to play</button>
+      <a href="game.html" class="btn">Play</a>
+      <a href="leaderboard.html" id="highScores" class="btn">Leaderboard</a>
     </div>
-    <div id="settings-container" class="settings-container">
-      <select id="category" name="category">
-        <!-- Category options will be filled by JavaScript -->
-      </select>
-      <select id="difficulty" name="difficulty">
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-      </select>
-      <label for="questions">Number of Questions:</label>
-      <select id="questions">
-        <option value="5">5</option>
-        <option value="10" selected>10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-      </select>
-      <label for="timer">Seconds/Question</label>
-      <input id="timer" type="number" min="5" max="60" value="10">
-      
-      <button id="start-btn" class="start-btn">Start Quiz</button>
+
+  </div>
+
+  <!-- Modal Container -->
+  <div id="modal-container">
+    <div id="modal-content">
+      <h2>How To Play</h2>
+
+      <p>Press Play</p>
+      <p>Choose the level of difficulty you would like to play</p>
+      <p>Answer the questions by clicking on the answer you think is correct</p>
+      <p>Record your high score, and play again - can you beat your score?</p>
+
+      <button id="close-modal" class="btn">Close</button>
     </div>
-    <div id="progress-container" class="progress-container">
-      <div id="progress-bar" class="progress-bar"></div>
-    </div>
-    <div id="question-container" class="question-container" hidden>
-      <p id="timer-countdown" class="timer-countdown"></p>
-      <p id="question" class="question"></p>
-      <div id="choice-container" class="choice-container">
-      </div>
-    </div>
-    <div id="congratulation" style="display: none;">
-      <h1>Congratulations!</h1>
-      <p>You scored 100%!</p>
-    </div>
-    <audio id="congrats-music" src="path/to/your/music.mp3" type="audio/mpeg"></audio>
-    <div class="quiz-footer">
-      <button id="next-btn" class="next-btn" hidden>Next</button>
-      <button id="quit-btn" class="quit-btn" hidden>Quit</button>
-    </div>
-    <script src="assets/js/game.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 </html>

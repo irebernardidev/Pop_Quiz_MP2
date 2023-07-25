@@ -62,6 +62,7 @@ body {
   background: #BBDEFB;
   border-radius: 5px;
   border-color: #5adbb5;
+  border-style: solid;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
@@ -87,6 +88,7 @@ body {
   color: #fff;
   border-radius: 5px;
   border-width: 3px;
+  border-style: solid;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -160,6 +162,112 @@ body {
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
+
+/*---------- MODAL ----------*/
+/* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I
+ Making the modal container show on the whole screen, centering the contents */
+ #outer-container {
+  max-width: 800px;
+  width: 95%;
+  margin: 2rem auto;
+  padding: 20px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  background: #a881af;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn-group .btn {
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  min-width: 120px; /* set a minimum width */
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background: #a881af;
+  border-style: solid;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #a881af;
+  border-color: #5adbb5;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background: #5adbb5;
+  border-color: #a881af;
+}
+
+#modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);  /* Add some darkness to the background */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.blur-effect {
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#modal-content {
+  width: 80%;
+  border: #a881af 5px solid;  /* Changed to a color defined in your CSS */
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background-color: #fff;  /* Changed to white for higher contrast */
+  color: #333;  /* Dark text on light background */
+  text-align: center;
+}
+
+#close-modal {
+  margin-top: 3rem;
+  background-color: #a881af;
+  color: #fff;  /* White text on a colored button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-width: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+
 
 
 /* Extra small devices (portrait phones, less than 360px) */
@@ -266,10 +374,3 @@ body {
     flex-basis: calc(33.33% - 1rem);
   }
 }
-
-
-
-
-
-
-
