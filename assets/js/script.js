@@ -27,6 +27,3 @@ document.getElementById("close-modal").addEventListener("click", function() {
     modal.classList.remove('show');
     mainContainer.classList.remove('blur-effect');
 });
-
-
-

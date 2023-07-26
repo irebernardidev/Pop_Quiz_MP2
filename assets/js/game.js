@@ -22,6 +22,30 @@ const startButton = document.getElementById('start-btn');
 const correctSound = document.getElementById('correct-sound');
 const wrongSound = document.getElementById('wrong-sound');
 const congratsMusic = document.getElementById('congrats-music');
+const muteButton = document.getElementById('mute-btn');
+
+// Mute and Unmute audio functionality
+let isMuted = false;
+
+muteButton.addEventListener('click', () => {
+  if (isMuted) {
+    // If the audio is currently muted, unmute it
+    correctSound.muted = false;
+    wrongSound.muted = false;
+    congratsMusic.muted = false;
+    muteButton.classList.remove('fa-volume-mute');
+    muteButton.classList.add('fa-volume-up');
+  } else {
+    // If the audio is currently playing, mute it
+    correctSound.muted = true;
+    wrongSound.muted = true;
+    congratsMusic.muted = true;
+    muteButton.classList.remove('fa-volume-up');
+    muteButton.classList.add('fa-volume-mute');
+  }
+  // Flip the isMuted boolean to its opposite value
+  isMuted = !isMuted;
+});
 
 
 // Fetch and populate categories from API
