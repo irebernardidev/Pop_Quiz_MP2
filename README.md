@@ -1,6 +1,6 @@
-# Pop Pub Quiz
-![Pop Pub Quiz]()
-Find the final project here: [Pop Quiz MP2]()
+# Quiz Pro Quo
+![Quiz Pro Quo]()
+Find the final project here: [Quiz Pro Quo]()
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -30,7 +30,7 @@ Find the final project here: [Pop Quiz MP2]()
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Welcome to the Pop Pub Quiz repository! Dive into an interactive quiz experience that tests your knowledge on pop culture, from trending music hits to iconic movies throughout the decades. Built with the pillars of web development - HTML, CSS, and JavaScript - this project offers a seamless and engaging quiz interface fit for both casual pub goers and trivia enthusiasts alike.
+Welcome to the Quiz Pro Quo repository! Dive into an interactive quiz experience that tests your knowledge on pop culture, from trending music hits to iconic movies throughout the decades. Built with the pillars of web development - HTML, CSS, and JavaScript - this project offers a seamless and engaging quiz interface fit for both casual pub goers and trivia enthusiasts alike.
 Whether you're looking to host a fun evening with friends, or simply challenge your own knowledge on pop culture, the Pop Pub Quiz is the perfect web-based trivia game for you. Dive in, have fun, and may the best pop culture aficionado win!
 
 This website was made for the second of four Milestone projects required to complete the Diploma in Software development program at The Code Institute.
@@ -40,13 +40,12 @@ The website was designed with the following target audience in mind:
 - Current users
 - New users
 - Quiz enthusiasts
-- Pub Quiz enthusiasts
 
 ## Ideal User Demographic
 - Over 18
 - Londoners, residing in London and visitors
 - Quiz enthusiasts
-- Pub Quiz enthusiasts, quiz enthusiasts
+
 
 ## User Stories
 The website was designed to cater to the needs of different users, including:
