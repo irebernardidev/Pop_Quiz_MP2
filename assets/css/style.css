@@ -283,7 +283,7 @@ h2, h1 {
 
 /* Footer styling */
 .footer {
-  position: fixed;
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
