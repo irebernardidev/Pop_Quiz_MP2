@@ -24,6 +24,8 @@ const wrongSound = document.getElementById('wrong-sound');
 const congratsMusic = document.getElementById('congrats-music');
 const muteButton = document.getElementById('mute-btn');
 
+muteButton.classList.add('pointer-cursor');
+
 // Mute and Unmute audio functionality
 let isMuted = false;
 
