@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Irene Bernardi" />
+    <meta name="description" content="Quiz Pro Quo is an exciting and fun-filled trivia game that tests your knowledge on various pop culture topics." />
+    <meta name="keywords" content="Quiz, Trivia, Game, Pop Culture, Music, Movies, Sports, History" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      />
-    <link rel="stylesheet" href="assets/css/style.css" />
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Welcome to Quiz Pro Quo!</title>
-</head>
+  </head>
+  
 <body>
   <!-- Outer Container -->
   <div id="outer-container">
@@ -45,6 +48,17 @@
       <button id="close-modal" class="btn">Close</button>
     </div>
   </div>
+  <!-- Contact Form -->
+<div id="contact-container">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+    <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send">
+  </form>
+</div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="social-links">
@@ -54,6 +68,7 @@
       <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
