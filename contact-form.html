@@ -15,40 +15,21 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Welcome to Quiz Pro Quo!</title>
+    <title>Contact Us</title>
   </head>
   
 <body>
-  <!-- Outer Container -->
-  <div id="outer-container">
-    <h2>Welcome to Quiz Pro Quo!</h2>
-    <p>Quiz Pro Quo is an exciting and fun-filled trivia game that puts your knowledge to the test on various pop culture topics. From music and movies to sports and history, there's a category for everyone. Battle your way through different levels of difficulty and aim to top the leaderboard. Are you ready to test your pop culture prowess?</p>
-
-    <p>Use the buttons below to navigate to the page you would like to view. You can return to this home page from any
-      page on the site simply by clicking on the Pop Quiz title at the top of each page.</p>
-
-    <div class="btn-group">
-      <button id="open-modal" class="btn">How to play</button>
-      <a href="game.html" class="btn">Play</a>
-      <a href="leaderboard.html" id="highScores" class="btn">Leaderboard</a>
-      
-    </div>
-    <a href="contact-form.html" target="_blank" class="btn">Contact Us</a>
-  </div>
-  
-  <!-- Modal Container -->
-  <div id="modal-container">
-    <div id="modal-content">
-      <h2>How To Play</h2>
-
-      <p>Press Play</p>
-      <p>Choose the level of difficulty you would like to play</p>
-      <p>Answer the questions by clicking on the answer you think is correct</p>
-      <p>Record your high score, and play again - can you beat your score?</p>
-
-      <button id="close-modal" class="btn">Close</button>
-    </div>
-  </div>
+  <!-- Contact Form -->
+<div id="contact-container">
+ 
+  <form id="contact-form">
+    <h2>Contact Us</h2>
+    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+    <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <input class="send-btn" type="submit" value="Send">
+  </form>
+</div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -61,6 +42,6 @@
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/email.js"></script>
 </body>
 </html>

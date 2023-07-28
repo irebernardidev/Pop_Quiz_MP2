@@ -86,7 +86,7 @@ body {
   background-color: #FFCDD2; /* red for wrong */
 }
 
-.next-btn, .quit-btn, .start-btn, .back-btn {
+.next-btn, .quit-btn, .start-btn, .back-btn, .send-btn {
   padding: 10px 20px;
   background: #a881af;
   border-color: #5adbb5;
@@ -99,7 +99,7 @@ body {
   text-transform: uppercase;
 }
 
-.next-btn:hover, .back-btn:hover, .start-btn:hover, .quit-btn:hover {
+.next-btn:hover, .back-btn:hover, .start-btn, .send-btn:hover, .quit-btn:hover {
   transform: scale(1.02);
   background: #5adbb5;
   border-color: #a881af;
@@ -225,6 +225,7 @@ h2, h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -280,6 +281,29 @@ h2, h1 {
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
+
+/* Contact Form style */
+#contact-container #contact-form  {
+
+  max-width: 800px;
+  width: 95%;
+  margin: 2rem auto;
+  padding: 20px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+#contact-form input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 
 /* Footer styling */
 .footer {
@@ -339,7 +363,7 @@ h2, h1 {
     font-size: 0.7em;
   }
 
-  .next-btn, .quit-btn, .start-btn, .back-btn, .btn {
+  .next-btn, .quit-btn, .start-btn, .back-btn, .send.btn, .btn {
     padding: 5px 10px;
     font-size: 0.8em;
   }
@@ -382,7 +406,7 @@ h2, h1 {
     font-size: 0.9em;
   }
 
-  .next-btn, .quit-btn, .start-btn, .back-btn, .btn {
+  .next-btn, .quit-btn, .start-btn, .back-btn, .btn, .send-btn {
     padding: 10px 15px;
     font-size: 0.9em;
   }
@@ -423,7 +447,7 @@ h2, h1 {
     padding: 10px;
   }
 
-  .next-btn, .quit-btn, .start-btn, .back-btn {
+  .next-btn, .quit-btn, .start-btn, .back-btn, .send-btn {
     padding: 10px 20px;
   }
 
