@@ -23,7 +23,10 @@ const correctSound = document.getElementById('correct-sound');
 const wrongSound = document.getElementById('wrong-sound');
 const congratsMusic = document.getElementById('congrats-music');
 const muteButton = document.getElementById('mute-btn');
-const settingsContainerElement = document.getElementById('settings-container');  // NEW LINE
+const settingsContainerElement = document.getElementById('settings-container');
+// Define the play again and home buttons
+const playAgainButton = document.querySelector(".btn-group a[href='game.html']"); 
+const homeButton = document.querySelector(".btn-group a[href='index.html']"); 
 
 muteButton.classList.add('pointer-cursor');
 
@@ -69,7 +72,9 @@ startButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       questions = data.results;
-      settingsContainerElement.style.display = "none";  // NEW LINE
+      settingsContainerElement.style.display = "none";  
+      playAgainButton.style.pointerEvents = "none"; // Disable Play Again button  // NEW
+      homeButton.style.pointerEvents = "none"; // Disable Home button  // NEW
       startQuiz(); // Start the quiz
     });
 });
@@ -165,6 +170,8 @@ quitButton.addEventListener('click', () => {
 // Function to end the quiz
 function endQuiz() {
   const userName = prompt('Enter your name for the leaderboard:');
+  playAgainButton.style.pointerEvents = "auto"; // Enable Play Again button  
+  homeButton.style.pointerEvents = "auto"; // Enable Home button  
 
   // Retrieve previous scores from local storage or initialize if it doesn't exist
   let scores = JSON.parse(localStorage.getItem('scores')) || [];
