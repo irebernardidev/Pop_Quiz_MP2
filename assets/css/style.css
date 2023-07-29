@@ -287,7 +287,9 @@ h2, h1 {
 
   max-width: 800px;
   width: 95%;
-  margin: 2rem auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
   background-color: rgba(255, 255, 255, 0.5);
@@ -342,6 +344,8 @@ h2, h1 {
 @media (max-width: 360px) { 
   .quiz-container, #leaderboard-container {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     margin: 1rem auto;
   }
@@ -378,13 +382,16 @@ h2, h1 {
     margin-left: 10px;
   }
 }
-
 /* Small devices (portrait phones, 360px and up) */
-@media (min-width: 361px) and (max-width: 575.98px) { 
-  .quiz-container, #leaderboard-container, #outer-container {
-    width: 95%;
+@media (min-width: 361px) and (max-width: 575px) { 
+  .quiz-container, #leaderboard-container, #outer-container, #contact-container, #contact-form {
+    width: 80%;
   }
 
+  #contact-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .choice-container, .settings-container {
     flex-direction: column;
   }
@@ -425,8 +432,13 @@ h2, h1 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .quiz-container, #leaderboard-container {
-    width: 90%;
+  .quiz-container, #leaderboard-container, #contact-container {
+    width: 85%;
+  }
+
+  #contact-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .choice-container, .settings-container {
