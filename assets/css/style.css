@@ -201,9 +201,9 @@ h2, h1 {
 
 .btn-group .btn {
   display: inline-block;
+  min-width: 120px;
   margin: 1rem 0.5rem;
   padding: 1rem;
-  min-width: 120px; /* set a minimum width */
   text-align: center;
   border-radius: 5px;
   color: white;
@@ -211,8 +211,8 @@ h2, h1 {
   border-style: solid;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
-
 
 .btn {
   font-size: 16px;
@@ -284,7 +284,6 @@ h2, h1 {
 
 /* Contact Form style */
 #contact-container #contact-form  {
-
   max-width: 800px;
   width: 95%;
   margin-top: 2rem;
@@ -305,7 +304,6 @@ h2, h1 {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 
 /* Footer styling */
 .footer {

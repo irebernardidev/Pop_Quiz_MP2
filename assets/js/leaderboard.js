@@ -1,6 +1,6 @@
 // Get the leaderboard list and back button
 const leaderboardList = document.getElementById('leaderboard-list');
-const backButton = document.getElementById('back-to-game');
+const backButton = document.getElementById('play-again');
 
 function displayLeaderboard() {
   leaderboardList.innerHTML = '';
@@ -15,12 +15,12 @@ function displayLeaderboard() {
     leaderboardList.appendChild(li);
   });
 
-  backButton.addEventListener('click', backToGame);
+  backButton.addEventListener('click', playAgain);
 }
 
 displayLeaderboard();
 
-function backToGame() {
+function playAgain() {
   // Redirect to the game page
   window.location.href = 'index.html';
 }
