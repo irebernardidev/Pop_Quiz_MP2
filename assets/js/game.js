@@ -23,6 +23,7 @@ const correctSound = document.getElementById('correct-sound');
 const wrongSound = document.getElementById('wrong-sound');
 const congratsMusic = document.getElementById('congrats-music');
 const muteButton = document.getElementById('mute-btn');
+const settingsContainerElement = document.getElementById('settings-container');  // NEW LINE
 
 muteButton.classList.add('pointer-cursor');
 
@@ -49,7 +50,6 @@ muteButton.addEventListener('click', () => {
   isMuted = !isMuted;
 });
 
-
 // Fetch and populate categories from API
 fetch('https://opentdb.com/api_category.php')
   .then(response => response.json())
@@ -69,6 +69,7 @@ startButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       questions = data.results;
+      settingsContainerElement.style.display = "none";  // NEW LINE
       startQuiz(); // Start the quiz
     });
 });
