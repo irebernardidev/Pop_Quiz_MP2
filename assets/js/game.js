@@ -169,7 +169,7 @@ quitButton.addEventListener('click', () => {
 
 // Function to end the quiz
 function endQuiz() {
-  const userName = prompt('Enter your name for the leaderboard:');
+  const userName = prompt('Kudos, quiz conqueror! Leave your name for the leaderboard:');
   playAgainButton.style.pointerEvents = "auto"; // Enable Play Again button  
   homeButton.style.pointerEvents = "auto"; // Enable Home button  
 
@@ -192,20 +192,20 @@ function endQuiz() {
 
   let message;
   if (percentageScore === 100) {
-    message = "Incredible! You've answered every question correctly.";
+    message = "You're a trivia whiz! Perfect score!";
     const congratsElement = document.getElementById('congratulation');
     congratsElement.style.display = 'block';
     congratsElement.classList.add('congrats');
     congratsMusic.play();
   
   } else if (percentageScore >= 75) {
-    message = "Well done! You've scored highly.";
+    message = "You're a trivia shark! Super high score!";
   } else if (percentageScore >= 50) {
-    message = "Good job! You've got more than half the answers right.";
+    message = "Great hustle! You answered over half correctly!";
   } else if (percentageScore >= 25) {
-    message = "Don't worry, keep practicing!";
+    message = "Not too shabby, keep practicing and you'll get there!";
   } else {
-    message = "Tough quiz, better luck next time!";
+    message = "That was a brain-buster, wasn't it? Try again next time!";
   }
 
   results.innerHTML = `
