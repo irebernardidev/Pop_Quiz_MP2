@@ -331,7 +331,7 @@ h2, h1 {
 
 /* Extra small devices (portrait phones, less than 360px) */
 @media (max-width: 360px) { 
-  .quiz-container, #leaderboard-container, #contact-container {
+  .quiz-container, #leaderboard-container, #contact-container, #modal-container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
