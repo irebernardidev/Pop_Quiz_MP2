@@ -130,8 +130,9 @@ Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
 - ### Typography
 
-The typography pairing used on the site are 
-A backup of Sans-Serif had been applied in case of import failure.
+• Primary Font: Roboto - The Roboto font is used for all text on the website. This font has been chosen for its readability and modern look.
+
+• Secondary Font: Font Awesome - Font Awesome icons are used throughout the website to enhance the user interface.
 
 - ### Imagery
 The Quiz Pro Quo website primarily relies on a text-based interface to create a distraction-free quiz environment. However, some key images and icons are used:
