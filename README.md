@@ -134,8 +134,13 @@ The typography pairing used on the site are
 A backup of Sans-Serif had been applied in case of import failure.
 
 - ### Imagery
-High-quality images and/or videos were used to enhance the website's visual appeal.
-The selected imagery has been sourced and created from various sites such as [Freepik](https://www.freepik.com/), [Pixabay](https://pixabay.com/), [Adobe Stock](https://www.stock.adobe.com/) and [Canva](https://www.canva.com/) free stocks.
+The Quiz Pro Quo website primarily relies on a text-based interface to create a distraction-free quiz environment. However, some key images and icons are used:
+  * Logo: The Quiz Pro Quo logo from [Flaming Text](https://flamingtext.com/) is displayed prominently on the top of each page. It has been designed to reflect the fun and exciting nature of the quizzes.
+
+  * Icons: [Font Awesome](https://fontawesome.com/) icons are used to visually communicate functions like social media links and volume control. They are displayed in the website's primary color for consistency.
+
+  * [Favicon](https://www.favicon.cc/): A unique favicon is provided that is representative of the brand identity. It's visible in the browser tab for easy site identification.
+
 
 ## Features
 
