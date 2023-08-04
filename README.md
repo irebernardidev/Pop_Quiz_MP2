@@ -12,7 +12,10 @@ Find the final project here: [Quiz Pro Quo]()
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
-    * [Existing Features](#existing-features)
+    * [The Home Page](#home-page)
+    * [The Game Page](#game-page)
+    * [The Leaderboard Page](#leaderboard-page)
+    * [The 404 Error Page](#404-page)
     * [Features to Implement in the Future](#features-to-implement-in-the-future)
   * [Accessibility](#accessibility)  
 - [Issues and Bugs](#issues-and-bugs)
@@ -75,7 +78,8 @@ Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
 - ## Typography
 
-• Primary Font: [Roboto](https://fonts.google.com/specimen/Roboto) - The Roboto font is used for all text on the website. This font has been chosen for its readability and modern look.
+• Primary Font: [Roboto](https://fonts.google.com/specimen/Roboto) - The Roboto font is used for all text on the website. This font was chosen for its clean lines and readability, which complement the straightforward, accessible design of the website.
+
 ![Typography](documentation/features/roboto-400.png)
 ![Typography](documentation/features/roboto-700.png)
 
@@ -83,7 +87,7 @@ Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
 - ## Imagery
 The Quiz Pro Quo website primarily relies on a text-based interface to create a distraction-free quiz environment. However, some key images and icons are used:
-  * Logo: The Quiz Pro Quo logo from [Flaming Text](https://flamingtext.com/) is displayed prominently on the top of each page. It has been designed to reflect the fun and exciting nature of the quizzes.
+  * Logo: The Quiz Pro Quo logo from [Flaming Text](https://flamingtext.com/) is displayed prominently on the top of each page. It has been designed to reflect the fun and exciting nature of the quizzes. The alt attribute is set as "logo" which provides alternative information for an image if a user for some reason cannot view it.
 
   * Icons: [Font Awesome](https://fontawesome.com/) icons are used to visually communicate functions like social media links and volume control. They are displayed in the website's primary color for consistency.
 
@@ -107,68 +111,30 @@ All Pages on the website are responsive and have:
 - The title of the site at the top of every page. This title also acts as a link back to the home page.
 ![Ttle](documentation/features/title.png)
 
-## Social Media Icons
-Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the various platforms. The icons appear in the centre of the footer. Please refer to [Social media links](#socialmedia-links)
+- Social Media Icons:
+Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the various platforms. The icons appear in the centre of the footer.
+![Social media links](documentation/features/socials-icons.png)
 
+- The background image is an essential aspect of the website's visual aesthetic. It contributes to the overall look and feel of the site, giving it a playful and engaging appearance that fits the trivia game theme.
+![Background Image](assets/images/yellow-question-mark.jpg)
 
-### Contact Form
-The Contact Form is located in the right column and is designed to allow users to get in touch with the wine bar easily. The form consists of the following input fields:
+### The Home Page
 
-1. Name (required): A text input field for users to enter their name.
-2. Email (required): An email input field for users to enter their email address. This field includes email validation to ensure a valid email address is provided.
-3. Message (required): A textarea input field for users to enter their message.
+### The Game Page
 
-Additionally, there is a submit button with the label "Send message". When the user clicks this button, the form is submitted, and a script (form-handler.js) processes the form submission. It checks for any validation errors and displays them to the user if necessary. If the form submission is successful, the user receives a response message.
+### The Leaderboard Page
 
-This feature allows the Wine Time website to provide an interactive and user-friendly way for visitors to locate the wine bar and get in touch with any questions, comments, or reservations.
+### The Contact Page
 
-## Customer Review Section
-The Customer Reviews section displays three reviews from customers who have visited the wine bar. Each review includes the customer's image, name, and a quote. This section helps to showcase positive feedback from satisfied customers.
+### The 404 Error Page
+The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. The user can click on Home button or title to redirect themselves to the home page.
 
-![Screenshot of Customer Review Section](assets/readme-files/customers-reviews.png)
-
-![Screenshot of Customer Review Section](assets/readme-files/customers-reviews-iPhone.png)
-
-## Form Submission Success Page
-The Form Submission Success Page is designed to provide feedback to users after they have successfully submitted the contact form on the Wine Time website. This page consists of the following elements:
-
-1. Background Image: A full-screen background image (background-image.jpg) is displayed on this page. It serves as a visual backdrop for the content and adds aesthetic appeal.
-
-2. Text Container: A container element holds the text and button. It is positioned over the background image and contains the following elements:
-
-* Heading: A large heading (h2) with the text "Form Submission Successful" informs the user that their form submission was successful.
-
-* Subheading: A subheading provides additional information to the user, stating, "Thank you for contacting us. We will get back to you shortly." This message reassures the user that their inquiry has been received and that they can expect a response from the Wine Time team.
-
-* Back to Contact Page Button: A button is placed below the subheading. When clicked, it redirects the user back to the contact page. This button provides an easy way for users to return to the contact page if they wish to review their submission or submit another inquiry.
-
-The Form Submission Success Page is designed with user experience in mind, as it provides clear feedback on the form submission's outcome and offers a seamless way to navigate back to the contact page. This page helps build trust and credibility with the user by promptly acknowledging their inquiry and assuring them of a timely response from the Wine Time team.
-
-![Screenshot of Form Submission Success Page](assets/readme-files/successful.png)
-
-![Screenshot of Form Submission Success Page](assets/readme-files/successful-iPhone.png)
-
-
-## Write a Review Page
-### Review Form
-The review form allows users to submit a review about their experience at Wine Time. The form contains fields for the user's name, email address, and review text. Form validation is performed using custom JavaScript.
-
-![Screenshot of Write a Review Page](assets/readme-files/review-form.png)
-
-![Screenshot of Write a Review Page](assets/readme-files/review-form-iPhone.png)
-
-### Background Image
-The background image features an assortment of wine bottles, adding visual interest and reinforcing the theme of the website.
-
-## Thank You Page
-The Thank You page is displayed when a user submits a review. Its purpose is to acknowledge the user's input, express gratitude for their feedback, and provide an option to return to the home page.
-
-![Screenshot of Thank You Page](assets/readme-files/return.png)
+### The 500 Error Page
+The 500 error page displays the sites names as a title, which also acts as a link back to the home page. Within the page is an error message that tells the user sorry there seems to be an internal server error. The user can click on Home button or title to redirect themselves to the home page.
 
 ## Features to Implement in the future
 - Additional features that could be added to the website in the future include:
-   * Give users the option to select the amount of questions in their quiz.
-   * Look into making the quiz a multiplayer game, so that it could be played by teams, which would make the quiz even more like a pub quiz.
+   * Look into making the quiz a multiplayer game, so that it could be played by teams, which would make the quiz even more dynamic.
    * Create a back end database to enable me to store scores which would then allow you to see how you scored against other players.
    * Look further into the accessibility for people with colour blindness, perhaps by adding symbols such as a tick or cross next to the answer when they are checked.
 
