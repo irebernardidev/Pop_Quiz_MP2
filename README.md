@@ -1,6 +1,6 @@
 # Quiz Pro Quo
-![Quiz Pro Quo]()
-Find the final project here: [Quiz Pro Quo]()
+![Quiz Pro Quo](https://ui.dev/amiresponsive?url=https://irebernardidev.github.io/Quiz-Pro-Quo/)
+Find the final project here: [Quiz Pro Quo](https://irebernardidev.github.io/Quiz-Pro-Quo/)
 
 ## Table of Contents
 - [Introduction](#introduction)
