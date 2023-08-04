@@ -12,10 +12,12 @@ Find the final project here: [Quiz Pro Quo]()
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
-    * [The Home Page](#home-page)
-    * [The Game Page](#game-page)
-    * [The Leaderboard Page](#leaderboard-page)
-    * [The 404 Error Page](#404-page)
+    * [The Home Page](#the-home-page)
+    * [The Game Page](#the-game-page)
+    * [The Leaderboard Page](#the-leaderboard-page)
+    * [The Contact Page](#the-contact-page)
+    * [The 404 Error Page](#the-404-error-page)
+    * [The 500 Error Page](#the-500-error-page)
     * [Features to Implement in the Future](#features-to-implement-in-the-future)
   * [Accessibility](#accessibility)  
 - [Issues and Bugs](#issues-and-bugs)
@@ -125,6 +127,26 @@ Appearing on every page, the icons are appropriate representations of the Social
 ### The Leaderboard Page
 
 ### The Contact Page
+The Contact Us page provides a way for users to get in touch with the developers or administrators of the Quiz Pro Quo. It contains a simple form that collects the user's name, email, and a message.
+![Contact Page](documentation/features/contact-page.png)
+
+Upon submitting the form, an email will be sent to the designated recipient via [EmailJS](https://www.emailjs.com/), a service that helps send emails using client side technologies only.
+This is handled by the following JavaScript code:
+![EmailJS](documentation/features/email-js.png)
+
+In the above code, we first initialize EmailJS with a user ID (zn6LDYixJTe5o00_B), which is used to send emails from the browser.
+
+The submit event is attached to the form, and when the form is submitted, the default form submission is prevented using event.preventDefault();.
+
+Then, the emailjs.sendForm() function is used to send the form data to the specified email service. The function takes four arguments: the service ID, the template ID, the form, and the user ID.
+
+Once the email has been successfully sent, the promise resolves and a message is displayed to the user. If there was an error sending the email, the promise is rejected and an error message is displayed.
+![Email Successfully Sent](documentation/features/email-sent.png)
+
+Lastly, the form fields are cleared out in preparation for the next message.
+
+In the contact-form.html page, the form's action is not specified, as the action is handled by the EmailJS library and not a traditional server-side processing script.
+
 
 ### The 404 Error Page
 The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. The user can click on Home button or title to redirect themselves to the home page.
