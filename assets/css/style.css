@@ -465,12 +465,56 @@ h2, h1 {
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 768px) {
+/* Large devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .quiz-container, #leaderboard-container, #contact-container {
+    width: 85%;
+  }
+
+  #contact-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .choice-container, .settings-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .choice {
+    flex-basis: calc(50% - 1rem);
+    padding: 10px;
+  }
+
+  #modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .quiz-header, .quiz-footer, .leaderboard-header {
+    padding: 20px;
+  }
+
+  .question-container, .leaderboard-list li {
+    padding: 10px;
+  }
+
+  .next-btn, .quit-btn, .start-btn, .back-btn, .send-btn {
+    padding: 10px 20px;
+  }
+
+  .settings-container select,
+  .settings-container input {
+    padding: 0.5rem;
+  }
+}
+
+/* Extra large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   .quiz-container, #leaderboard-container, #contact-container {
     width: 70%;
   }
-  
+
   #contact-container {
     margin-left: auto;
     margin-right: auto;

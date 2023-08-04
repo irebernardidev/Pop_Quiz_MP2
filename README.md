@@ -5,14 +5,16 @@ Find the final project here: [Quiz Pro Quo]()
 ## Table of Contents
 - [Introduction](#introduction)
 - [UX](#ux)
-  * [Ideal User Demographic](#ideal-user-demographic)
-  * [User Stories](#user-stories)
-  * [Development Planes](#development-planes)
-  * [Design](#design)
-- [Features](#features)
-  * [Design Features](#design-features)
-  * [Existing Features](#existing-features)
-  * [Features to Implement in the Future](#features-to-implement-in-the-future)
+   * [User Stories](#user-stories)
+- [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+    * [Existing Features](#existing-features)
+    * [Features to Implement in the Future](#features-to-implement-in-the-future)
+  * [Accessibility](#accessibility)  
 - [Issues and Bugs](#issues-and-bugs)
 - [Technologies Used](#technologies-used)
   * [Main Languages Used](#main-languages-used)
@@ -35,104 +37,49 @@ Whether you're looking to host a fun evening with friends, or simply challenge y
 
 This website was made for the second of four Milestone projects required to complete the Diploma in Software development program at The Code Institute.
 
-## UX
-The website was designed with the following target audience in mind:
-- Current users
-- New users
-- Quiz enthusiasts
+### User Stories
 
-## Ideal User Demographic
-- Over 18
-- Londoners, residing in London and visitors
-- Quiz enthusiasts
+#### First Time Visitor Goals
+- When I land on the Quiz Pro Quo homepage, I want to take part in a trivia quiz online and improve my general knowledge. I want to be able to play at any time, anywhere.
+- I want the site to be responsive to my device.
+- I want the site to be easy to navigate.
 
+#### Returning Visitor Goals
+- I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site.
 
-## User Stories
-The website was designed to cater to the needs of different users, including:
-- Current user goals
-- New user goals
-- Frequent user goals
-
-### Current User Goals
-1. I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site.
-
-### New User Goals
-1. I want to take part in a rock quiz online and improve my general knowledge. 
-2. I want to be able to play at any time, anywhere.
-3. I want the site to be responsive to my device.
-
-### Frequent User Goals
-1. I want to be able to adjust the difficulty level to keep improving my knowledge.
-2. I want to be able to log my high scores to see how I am performing.
-
-## Development Planes
-To create a comprehensive website that answers the above user stories and identifies the functionality of the site.
-
-### Strategy Plane
-This incorporates user needs as well as product objectives. This website focuses on the following target audience divided into three main categories:
-
-- Roles:
-  * Current users
-  * New users
-  * Frequent users
-
-- Demographic:
-  * Over 18
-  * Londoners, residing in London and visitors
-  * Pub Quiz enthusiasts, quiz enthusiasts
-
-- Psychography:
-  * Lifestyle:
-    * Interest in pop culture
-    * Active
-  * Personality/Attitudes:
-    * Like socializing
-    * Outgoing, sociable, and multicultural
-  * Values:
-    * Values include being open-minded and having a sense of community
-
-### Scope Plane
-This defines the requirements based on the goals established on the strategy plane, categorizing them into content and functionality requirements.
-- Content Requirements:
-  * The user will be looking for:
-    *
-
-
-- Functionality Requirements:
-  * The user will be able to:
-    * Be able to easily navigate the site to find the information they require
-  
-
-#### Structure
-The information was organized into a hierarchical tree structure or site map to ensure efficient and easy navigation for users.
-
-##### Site Map
-The information above was then organized in a hierarchical tree structure, a site map, showing how users can navigate through the site with ease and efficiency, with the following results:
-Please refer to [Site-map](assets/wireframes/Site-map.jpg)
-
-
-##### Skeleton
-Wireframes were created using a desktop version of [Balsamiq](https://balsamiq.com/) to showcase the website's appearance and ensure positive user experience.
-
-Please refer to [wireframes](documentation/wireframes) for detailed designs. Please note some improvements were made during the development of the website.
-
+#### Frequent User Goals
+- I want to be able to adjust the difficulty level to keep improving my knowledge.
+- I want to be able to log my high scores to see how I am performing.
 
 ### Design
+Quiz Pro Quo is designed to be visually engaging, intuitive, and user-friendly, ensuring a seamless and immersive gaming experience. The design is centered around an aesthetic that's appealing and enjoyable, while also aiding the functionality of the quiz game.
 The following design elements were used in the website:
 
 - ### Colour Scheme
-Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
+The color scheme adopted for this application provides a balance between attractiveness and functionality.
+
+- Primary Color (#a881af): This muted purple tone is used extensively throughout the application to provide a calming effect and to maintain a consistent visual identity. It is used in areas such as headers, footers, buttons, and borders.
+
+- Accent Color (#5adbb5): This light teal color is utilized for accenting and highlighting certain elements of the UI such as button hover effects and correct choices, providing a lively contrast to the primary color.
+
+- Background Color (rgba(255, 255, 255, 0.5)): A slightly transparent white is used as the background color for containers, ensuring readability while maintaining a light and airy aesthetic.
+
+- Error Color (#FFCDD2): A soft red color is utilized to signify incorrect choices, offering an intuitive visual cue to the user.
+
+- Success Color (#C8E6C9): A light green color is used to indicate correct answers, signaling success in an intuitive manner.
 
 ### Colour Palette
+Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
-![Colour Palette](assets/readme-files/colour-palette1.png)
-[![Colour Palette](assets/readme-files/colour-palette2.png)](#design)
+![Colour Palette](documentation/features/colour-palette.png)
 
 - ### Typography
 
-• Primary Font: Roboto - The Roboto font is used for all text on the website. This font has been chosen for its readability and modern look.
+• Primary Font: [Roboto](https://fonts.google.com/specimen/Roboto) - The Roboto font is used for all text on the website. This font has been chosen for its readability and modern look.
+![Typography](documentation/features/roboto-400.png)
+![Typography](documentation/features/roboto-700.png)
 
-• Secondary Font: Font Awesome - Font Awesome icons are used throughout the website to enhance the user interface.
+• Secondary Font: [Font Awesome](https://fontawesome.com/) - Font Awesome icons are used throughout the website to enhance the user interface.
 
 - ### Imagery
 The Quiz Pro Quo website primarily relies on a text-based interface to create a distraction-free quiz environment. However, some key images and icons are used:
@@ -141,6 +88,11 @@ The Quiz Pro Quo website primarily relies on a text-based interface to create a 
   * Icons: [Font Awesome](https://fontawesome.com/) icons are used to visually communicate functions like social media links and volume control. They are displayed in the website's primary color for consistency.
 
   * [Favicon](https://www.favicon.cc/): A unique favicon is provided that is representative of the brand identity. It's visible in the browser tab for easy site identification.
+
+## Wireframes
+Wireframes were created for mobile, tablet and desktop using [Balsamiq](https://balsamiq.com/).
+
+[Wireframes](documentation/wireframes)
 
 
 ## Features
