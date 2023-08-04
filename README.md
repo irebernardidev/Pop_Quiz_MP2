@@ -106,6 +106,7 @@ All Pages on the website are responsive and have:
 
 - The title of the site at the top of every page. This title also acts as a link back to the home page.
 ![Ttle](documentation/features/title.png)
+
 ## Social Media Icons
 Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the various platforms. The icons appear in the centre of the footer. Please refer to [Social media links](#socialmedia-links)
 
