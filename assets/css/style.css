@@ -422,9 +422,9 @@ h2, h1 {
 
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .quiz-container, #leaderboard-container, #contact-container {
-    width: 85%;
+@media (min-width: 555px) and (max-width: 820px) {
+  .quiz-container, #leaderboard-container, #contact-container, #outer-container {
+    width: 90%;
   }
 
   #contact-container {
@@ -466,9 +466,9 @@ h2, h1 {
 }
 
 /* Large devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .quiz-container, #leaderboard-container, #contact-container {
-    width: 85%;
+@media (min-width: 820px) and (max-width: 991px) {
+  .quiz-container, #leaderboard-container, #contact-container, #outer-container {
+    width: 90%;
   }
 
   #contact-container {
