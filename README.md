@@ -36,7 +36,7 @@ Welcome to the Quiz Pro Quo repository! Dive into an interactive quiz experience
 Whether you're looking to host a fun evening with friends, or simply challenge your own knowledge on pop culture, the Pop Pub Quiz is the perfect web-based trivia game for you. Dive in, have fun, and may the best pop culture aficionado win!
 
 This website was made for the second of four Milestone projects required to complete the Diploma in Software development program at The Code Institute.
-
+## User Experience
 ### User Stories
 
 #### First Time Visitor Goals
@@ -51,11 +51,11 @@ This website was made for the second of four Milestone projects required to comp
 - I want to be able to adjust the difficulty level to keep improving my knowledge.
 - I want to be able to log my high scores to see how I am performing.
 
-### Design
+# Design
 Quiz Pro Quo is designed to be visually engaging, intuitive, and user-friendly, ensuring a seamless and immersive gaming experience. The design is centered around an aesthetic that's appealing and enjoyable, while also aiding the functionality of the quiz game.
 The following design elements were used in the website:
 
-- ### Colour Scheme
+- ## Colour Scheme
 The color scheme adopted for this application provides a balance between attractiveness and functionality.
 
 - Primary Color (#a881af): This muted purple tone is used extensively throughout the application to provide a calming effect and to maintain a consistent visual identity. It is used in areas such as headers, footers, buttons, and borders.
@@ -68,12 +68,12 @@ The color scheme adopted for this application provides a balance between attract
 
 - Success Color (#C8E6C9): A light green color is used to indicate correct answers, signaling success in an intuitive manner.
 
-### Colour Palette
+## Colour Palette
 Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
 ![Colour Palette](documentation/features/colour-palette.png)
 
-- ### Typography
+- ## Typography
 
 • Primary Font: [Roboto](https://fonts.google.com/specimen/Roboto) - The Roboto font is used for all text on the website. This font has been chosen for its readability and modern look.
 ![Typography](documentation/features/roboto-400.png)
@@ -81,7 +81,7 @@ Using the [Adobe Color](https://color.adobe.com/create/color-wheel) colour wheel
 
 • Secondary Font: [Font Awesome](https://fontawesome.com/) - Font Awesome icons are used throughout the website to enhance the user interface.
 
-- ### Imagery
+- ## Imagery
 The Quiz Pro Quo website primarily relies on a text-based interface to create a distraction-free quiz environment. However, some key images and icons are used:
   * Logo: The Quiz Pro Quo logo from [Flaming Text](https://flamingtext.com/) is displayed prominently on the top of each page. It has been designed to reflect the fun and exciting nature of the quizzes.
 
@@ -95,38 +95,17 @@ Wireframes were created for mobile, tablet and desktop using [Balsamiq](https://
 [Wireframes](documentation/wireframes)
 
 
-## Features
+# Features
+## Existing Features
 
+The website is comprised of a home page, a games page, a leaderboard page, a contact form page a 404 error page & a 500 error page.
 
-### Design Features
+All Pages on the website are responsive and have:
+- A [favicon](https://www.favicon.cc/) in the browser tab.
+![Favicon](documentation/features/browser-favicon.png)
 
-
-- The website includes the following features:
-  * Easy navigation system
-  * Responsive design for all devices
-  
-
-### [General Features](#general-features)
-
-
-[Social media links](#socialmedia-links):
-The footer section includes links to the Rock Quiz's social media profiles on Facebook, Instagram, and Twitter, as well as a copyright notice. Each social media site should appear dark grey, on hover, it should turn red and when clicked, should open in a new tab.
-
-![Screenshot of responsive social links](assets/readme-files/social-links.png)
-![Screenshot of responsive social links](assets/readme-files/social-links-hover.png)
-
-
-[Footer](#footer): 
-
-
-# Existing Features
-
-## Favicon
-The favicon is located in the assets/images/ directory and is set as favicon.ico in the head section. Favicons help users quickly identify a website when multiple tabs are open or when searching through bookmarks.
-
-![Screenshot of favicon](assets/readme-files/favicon.png)
-
-
+- The title of the site at the top of every page. This title also acts as a link back to the home page.
+![Ttle](documentation/features/title.png)
 ## Social Media Icons
 Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the various platforms. The icons appear in the centre of the footer. Please refer to [Social media links](#socialmedia-links)
 
