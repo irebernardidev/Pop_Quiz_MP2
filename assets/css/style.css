@@ -205,19 +205,15 @@ h2, h1 {
   margin-left: 20px;
 }
 
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
 .btn-group .btn {
   display: inline-block;
-  min-width: 120px;
-  margin: 1rem 0.5rem;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  background: #a881af;
-  border-style: solid;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  box-sizing: border-box;
+
 }
 
 .btn {
@@ -232,6 +228,12 @@ h2, h1 {
   transition: all 0.3s ease;
   text-transform: uppercase;
   text-decoration: none;
+  min-width: 120px;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-style: solid;
+  box-sizing: border-box;
 }
 
 .btn:hover, #close-modal:hover {
@@ -372,7 +374,7 @@ h2, h1 {
   }
 }
 /* Small devices (portrait phones, 360px and up) */
-@media (min-width: 361px) and (max-width: 575px) { 
+@media (min-width: 361px) and (max-width: 665px) { 
   .quiz-container, #leaderboard-container, #outer-container, #contact-container, #contact-form {
     width: 80%;
   }
@@ -390,6 +392,11 @@ h2, h1 {
     flex-basis: 100%;
     padding: 10px;
     font-size: 0.9em;
+  }
+  
+  .btn-group .btn {
+    width: 48%; /* Two buttons side by side */
+    margin: 1% !important; 
   }
 
   .quiz-header, .quiz-footer, .leaderboard-header, h1, h2 {
@@ -486,6 +493,10 @@ h2, h1 {
     padding: 10px;
   }
 
+  .btn-group .btn {
+    width: 100%; /* Buttons will stack vertically */
+  }
+
   #modal-content {
     padding: 15px;
     font-size: 15px;
@@ -527,5 +538,10 @@ h2, h1 {
   #modal-content {
     padding: 10px;
     font-size: 15px;
+  }
+
+  .btn-group .btn {
+    flex: 1; /* All buttons take equal width */
+    max-width: 23%; /* For some spacing between them */
   }
 }
