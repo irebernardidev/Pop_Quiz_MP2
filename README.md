@@ -60,7 +60,7 @@ This website was made for the second of four Milestone projects required to comp
   <summary>Click to see persona forms!</summary>
   
   ![Persona forms](documentation/features/persona1.jpg)
-  ![Persona forms](documentation/features/persona2.jpg)
+  ![Persona forms](documentation/features/persona2.png)
 </details>
 
 # Design
