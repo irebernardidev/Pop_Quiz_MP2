@@ -56,6 +56,13 @@ This website was made for the second of four Milestone projects required to comp
 - I want to be able to adjust the difficulty level to keep improving my knowledge.
 - I want to be able to log my high scores to see how I am performing.
 
+<details>
+  <summary>Click to see persona forms!</summary>
+  
+  ![Persona forms](documentation/features/persona1.jpg)
+  ![Persona forms](documentation/features/persona2.jpg)
+</details>
+
 # Design
 Quiz Pro Quo is designed to be visually engaging, intuitive, and user-friendly, ensuring a seamless and immersive gaming experience. The design is centered around an aesthetic that's appealing and enjoyable, while also aiding the functionality of the quiz game.
 The following design elements were used in the website:
