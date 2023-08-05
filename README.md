@@ -57,7 +57,7 @@ This website was made for the second of four Milestone projects required to comp
 - I want to be able to log my high scores to see how I am performing.
 
 <details>
-  <summary>Click to see persona forms!</summary>
+  <summary>Click to see Persona Forms!</summary>
   
   ![Persona forms](documentation/features/persona1.jpg)
   ![Persona forms](documentation/features/persona2.png)
@@ -128,6 +128,13 @@ Appearing on every page, the icons are appropriate representations of the Social
 ![Background Image](assets/images/yellow-question-mark.jpg)
 
 ### The Home Page
+The home page of Quiz Pro Quo displays the sites name as a title and then a container which holds some welcome text, including alerting the users that they can navigate back to the home page at any time by clicking on the page name. Below this are four buttons, Game Rules, Play, Leaderboard and Reach Out.
+![Home Page](documentation/features/home-page.png)
+
+The Game Rules button opens a modal showing the user how to play. The modal contains a close button which will close the modal, and show the home page again.
+![Game Rules modal](documentation/features/game-rules.png)
+
+The Play button will redirect the user to the game page to select the difficulty, category, number of questions and timer lenght of their quiz, the Leaderbord button redirects the user to the Leaderboard page and the Reach Out button will redirect the user to a Contact page.
 
 ### The Game Page
 
