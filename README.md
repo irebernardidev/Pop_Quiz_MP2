@@ -1,5 +1,5 @@
 # Quiz Pro Quo
-![Quiz Pro Quo](documentation/features/am-i%20-responsive.png)
+![Quiz Pro Quo](documentation/features/am-i-responsive.png)
 Find the final project here: [Quiz Pro Quo](https://irebernardidev.github.io/Quiz-Pro-Quo/)
 
 ## Table of Contents
