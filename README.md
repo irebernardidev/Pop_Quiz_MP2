@@ -137,6 +137,18 @@ The Game Rules button opens a modal showing the user how to play. The modal cont
 The Play button will redirect the user to the game page to select the difficulty, category, number of questions and timer lenght of their quiz, the Leaderbord button redirects the user to the Leaderboard page and the Reach Out button will redirect the user to a Contact page.
 
 ### The Game Page
+Players can customize their experience by choosing the number of questions, difficulty, category and timer lenght. 
+![Game Page](documentation/features/game-page.png)
+
+Once the quiz starts, they are timed per question and must answer within the stipulated time. With each correct answer, a point is added to their score. The game gives instant feedback on the correctness of their choices.
+![Start Game](documentation/features/start-quiz.png)
+![Timer and Feedback](documentation/features/timer-answer.png)
+
+End your game with your score and a motivating message based on your performance. Players can then restart the game or go back to Home page.
+![Motivating Message](documentation/features/message.png)
+
+
+
 
 ### The Leaderboard Page
 
