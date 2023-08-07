@@ -148,9 +148,10 @@ End your game with your score and a motivating message based on your performance
 ![Motivating Message](documentation/features/message.png)
 
 
-
-
 ### The Leaderboard Page
+The leaderboard page of Quiz Pro Quo displays a sorted list of players and their scores. Players are ranked according to their score, with the time of completion serving as a tie-breaker. It also provides a 'Play Again?' button to redirect the user to the game page, and a 'Home' button to return to the home page.
+![Leaderboard Page](documentation/features/leaderboard.png)
+![leaderboard Buttons](documentation/features/leaderboard-buttons.png)
 
 ### The Contact Page
 The Contact Us page provides a way for users to get in touch with the developers or administrators of the Quiz Pro Quo. It contains a simple form that collects the user's name, email, and a message.
@@ -176,9 +177,13 @@ In the contact-form.html page, the form's action is not specified, as the action
 
 ### The 404 Error Page
 The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. The user can click on Home button or title to redirect themselves to the home page.
+![404 Page](documentation/features/404-page.png)
+
 
 ### The 500 Error Page
 The 500 error page displays the sites names as a title, which also acts as a link back to the home page. Within the page is an error message that tells the user sorry there seems to be an internal server error. The user can click on Home button or title to redirect themselves to the home page.
+![500 Page](documentation/features/500-page.png)
+
 
 ## Features to Implement in the future
 - Additional features that could be added to the website in the future include:
@@ -206,16 +211,12 @@ The following technologies were used in the development of the website:
 - [Bootstrap 5.3.0](https://getbootstrap.com/) was used multiple times during the development of the project.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design phase of the project.
 - [GitHub](https://github.com/) was used to store the project after pushing.
-- [Google Fonts](https://fonts.google.com/) was used to import the fonts "Lobster", "Josefin Sans" and "Lato" into the style.css file. These fonts were used throughout the project.
-- [Font Awesome 6.3.0](https://fontawesome.com/) was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
+- [Google Fonts](https://fonts.google.com/) was used to import the font "Roboto" into the style.css file. This font was used throughout the project.
+- [Font Awesome 6.3.0](https://fontawesome.com/) was used on all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
 - [jQuery](https://jquery.com/) A JavaScript library.
 - [Open Trivia DataBase](https://opentdb.com/) API used for the trivia questions.
 - [Am I Responsive?](https://ui.dev/amiresponsive) was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
-- [Miro](https://miro.com/app/dashboard/) was used to create the [Site map](assets/wireframes/Site-map.jpg)
-- [XConverter](https://www.xconvert.com/convert-mp4-to-gif) was used to compress and convert the mp4 videos to GIFs.
-- [Tinypng](https://tinypng.com/) was used to compress the images.
 - [Favicon](https://www.favicon.cc/) was used to create a favicon to help users quickly identify a website when multiple tabs are open or when searching through bookmarks.
-- [Illustrator](https://www.adobe.com/products/illustrator.html) was used to create the [Logo image](asssets/images/bar-logo.png)
 - [Visual Studio Code](https://code.visualstudio.com/download) was used to create files pages and produce the code for the project.
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) was used during the testing phase to test the responsiveness of the site and to check for any bugs.
 

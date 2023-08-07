@@ -191,6 +191,10 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2, h1 {
   text-align: center;
   padding: 20px;
