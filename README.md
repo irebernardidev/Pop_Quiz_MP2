@@ -191,6 +191,14 @@ The 500 error page displays the sites names as a title, which also acts as a lin
    * Create a back end database to enable me to store scores which would then allow you to see how you scored against other players.
    * Look further into the accessibility for people with colour blindness, perhaps by adding symbols such as a tick or cross next to the answer when they are checked.
 
+## Accessibility
+Throughout coding this site I kept accessibility in mind, to ensure that the website is user friendly for any user. I did this by:
+
+  * Using semantic HTML.
+  * Using descriptive aria labels for all links.
+  * Providing information for screen readers when using icons - such as footer icons.
+
+
 [Back to top](#)
 
 
@@ -199,8 +207,8 @@ The developer ran into several issues during the development of the website, wit
 | No | Bug | How I solved the issue|
 | --------- | ---------------- | -------------- |
 | 1   | The game is not successfully saving the user's name and score and transitioning to the leaderboard page. The error message "Uncaught SyntaxError: Illegal return statement" .           |   for storing multiple scores and names, I used an array of objects in localStorage instead of just a single object, then in leaderboard.js file, I retrieved the scores from localStorage and displayed them.  |
-| 2    | Pass             | Fail           |
-| Test 3    | Pass             | Pass           |
+| 2    |Congrats music isn't playing when player scores 100%        |  Found two instances of the audio tag with the same id "congrats-music" in the HTML code, bug fixed after removing one.         |
+| 3    | Buttons display with different sizes and not responsive      | Fixed the bug using Flexbox and I used percentages to specify the button widths, which can help with fluid layouts         |
 
 
 
