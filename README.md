@@ -209,8 +209,8 @@ The developer ran into several issues during the development of the website, wit
 | 1   | The game is not successfully saving the user's name and score and transitioning to the leaderboard page. The error message "Uncaught SyntaxError: Illegal return statement" .           |   for storing multiple scores and names, I used an array of objects in localStorage instead of just a single object, then in leaderboard.js file, I retrieved the scores from localStorage and displayed them.  |
 | 2    |Congrats music isn't playing when player scores 100%        |  Found two instances of the audio tag with the same id "congrats-music" in the HTML code, bug fixed after removing one.         |
 | 3    | Buttons display with different sizes and not responsive      | Fixed the bug using Flexbox and I used percentages to specify the button widths, which can help with fluid layouts         |
-
-
+| 4   | The Questions being pulled in from the JSON have HTML entity characters that are not escaped and therefore display incorrectly with symbols in place of the correct characters.      | Learnt that JSON does not support HTML character entities; it uses its own set of escape sequences. The HTML entities need to be converted back to their equivalent normal characters before being stored in JSON. Fixed bug using innerHTML rather than innerText. |
+| 5   | There is a a warning displaying in the console on the live page. This error seems to be because GitHub hosted pages disable googles 3rd party cookie alternative FLoC, which then throws this error. The error doesn't affect the site in any way. | This bug is still present.
 
 ## Technologies Used
 
@@ -254,7 +254,7 @@ To deploy the website on GitHub Pages, the following steps were followed:
 
 ### Cloning the repository
 You can clone the repository by following these steps:
-1. Go to the  repository on GitHub.
+1. Go to the https://github.com/irebernardidev/Quiz-Pro-Quo repository on GitHub.
 2. Click the "Code" button to the right of the screen, click HTTPs and copy the link there.
 3. Open a GitBash terminal and navigate to the directory where you want to locate the clone.
 4. On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process.
@@ -262,7 +262,7 @@ You can clone the repository by following these steps:
 ### Forking the repository
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
-1. Go to the repository on GitHub.
+1. Go to the https://github.com/irebernardidev/Quiz-Pro-Quo repository on GitHub.
 2. Click on the 'Fork' option towards the top left of the page.
 3. Click the dropdown button and click 'create a new fork'.
 4. This will bring up a page with details of the repository, fill in boxes as required.
@@ -275,13 +275,15 @@ The website was built by the developer. The webpages use images from [Freepik](h
 
 - Some of the text used in the the various pages were borrowed and adapted from various sites, listed below.
 
-  * 
-  * 
+  * [Medium- Jeffrey Martinez](https://martinezjf2.medium.com/how-to-setup-emailjs-33809350f0f8) - setting up EmailJS.
+  * [Florin Pop](https://www.youtube.com/watch?v=XH5OW46yO8I) - create modal popup.
 
 ### Media
 
-- All images and videos were sourced from the various artists from [Adobe Stock](https://stock.adobe.com/uk/), [Freepik](https://www.freepik.com/).
-
+- Background imange was sourced by [Freepik](https://www.freepik.com/) free library.
+- Sound effects are from [Freesound](https://freesound.org/home/): 650842__andreas__wrong-answer-buzzer.wav, 460665__sergequadrado__jolly-fanfares.wav
+421002__eponn__correct.wav
+- Page title logo from [Flaming Text](https://flamingtext.com/) free library.
 
 ### Code
 
@@ -290,7 +292,8 @@ The developer consulted multiple sites in order to better understand the code th
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 - [Geeks for Geeks](https://www.geeksforgeeks.org/)
-- [Map -Google Maps API](https://developers.google.com/maps/documentation/javascript/adding-a-google-map#javascript)
+- [Medium](https://medium.com/) 
+- [Jest](https://jestjs.io/docs/getting-started) - setting up Jest.
 
 [Back to top](#top)
 
