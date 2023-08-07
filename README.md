@@ -196,6 +196,12 @@ The 500 error page displays the sites names as a title, which also acts as a lin
 
 ## Issues and Bugs
 The developer ran into several issues during the development of the website, with the noteworthy ones listed below:
+| No | Bug | How I solved the issue|
+| --------- | ---------------- | -------------- |
+| 1   | The game is not successfully saving the user's name and score and transitioning to the leaderboard page. The error message "Uncaught SyntaxError: Illegal return statement" .           |   for storing multiple scores and names, I used an array of objects in localStorage instead of just a single object, then in leaderboard.js file, I retrieved the scores from localStorage and displayed them.  |
+| 2    | Pass             | Fail           |
+| Test 3    | Pass             | Pass           |
+
 
 
 ## Technologies Used
@@ -224,7 +230,8 @@ The following technologies were used in the development of the website:
 # Testing
 The website was tested thoroughly to ensure it is fully functional and user-friendly. The testing phase involved manual testing on different devices and browsers.
 
-Testing information can be found in a separate testing [file](TESTING.md)
+Testing information can be found in a separate testing [file](TESTING.md).
+
 
 ## Deployment
 The website was deployed on GitHub pages.
@@ -254,7 +261,7 @@ You can fork this repository by using the following steps:
 Click 'create fork'.
 
 ## Credits
-The website was built by the developer. The webpages use images from [Freepik](https://www.freepik.com/), [Pixabay](https://pixabay.com/) Activedia, crowd-1056764.jpg [Adobe Stock](https://www.stock.adobe.com/) and [Canva](https://www.canva.com/) free licence libreries, and icons from [Font Awesome](https://fontawesome.com/) and [Favicon](https://www.favicon.cc/).
+The website was built by the developer. The webpages use images from [Freepik](https://www.freepik.com/), icons from [Font Awesome](https://fontawesome.com/) and [Favicon](https://www.favicon.cc/).
 
 ### Content
 
@@ -265,7 +272,7 @@ The website was built by the developer. The webpages use images from [Freepik](h
 
 ### Media
 
-- All images and videos were sourced from the various artists from [Adobe Stock](https://stock.adobe.com/uk/), [Freepik](https://www.freepik.com/) and [Pixabay](https://pixabay.com/videos/)background image by Activedia, crowd-1056764.jpg __free licenced__.
+- All images and videos were sourced from the various artists from [Adobe Stock](https://stock.adobe.com/uk/), [Freepik](https://www.freepik.com/).
 
 
 ### Code
