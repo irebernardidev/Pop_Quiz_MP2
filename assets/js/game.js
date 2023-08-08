@@ -25,8 +25,8 @@ const congratsMusic = document.getElementById('congrats-music');
 const muteButton = document.getElementById('mute-btn');
 const settingsContainerElement = document.getElementById('settings-container');
 // Define the play again and home buttons
-const playAgainButton = document.querySelector(".btn-group a[href='game.html']"); 
-const homeButton = document.querySelector(".btn-group a[href='index.html']"); 
+const playAgainButton = document.querySelector(".btn-group a[href='game.html']");
+const homeButton = document.querySelector(".btn-group a[href='index.html']");
 
 muteButton.classList.add('pointer-cursor');
 
@@ -72,7 +72,7 @@ startButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       questions = data.results;
-      settingsContainerElement.style.display = "none";  
+      settingsContainerElement.style.display = "none";
       playAgainButton.style.pointerEvents = "none"; // Disable Play Again button  // NEW
       homeButton.style.pointerEvents = "none"; // Disable Home button  // NEW
       startQuiz(); // Start the quiz
@@ -125,7 +125,7 @@ function selectAnswer(e) {
   Array.from(choiceContainerElement.children).forEach(button => {
     button.disabled = true;
   });
-  
+
   // Update score and styles based on whether the answer was correct or incorrect
   if (selectedButton.innerText === correctAnswer) {
     selectedButton.classList.add('correct');
@@ -185,7 +185,7 @@ function endQuiz() {
   // Store updated scores in local storage
   localStorage.setItem('scores', JSON.stringify(scores));
 
-// Show the quiz results
+  // Show the quiz results
   const results = document.createElement('div');
   const percentageScore = (score / parseInt(questionsElement.value, 10)) * 100;
 
@@ -197,7 +197,7 @@ function endQuiz() {
     congratsElement.style.display = 'block';
     congratsElement.classList.add('congrats');
     congratsMusic.play();
-  
+
   } else if (percentageScore >= 75) {
     message = "You're a trivia shark! Super high score!";
   } else if (percentageScore >= 50) {
@@ -224,7 +224,7 @@ function endQuiz() {
   startButton.addEventListener('click', function () {
     location.reload();
   });
-// Redirect to leaderboard after 10 seconds
+  // Redirect to leaderboard after 10 seconds
   setTimeout(() => {
     window.location.href = 'leaderboard.html';
   }, 10000);
@@ -235,7 +235,7 @@ function startTimer() {
   let timeLeft = parseInt(timerElement.value);
   timerCountdownElement.innerText = `Time left: ${timeLeft}s`;
 
-// Change progress bar color based on remainig time percentage
+  // Change progress bar color based on remainig time percentage
   progressBar.style.width = '100%';
   progressBar.style.backgroundColor = '#4CAF50'; // set color to green at the start
 

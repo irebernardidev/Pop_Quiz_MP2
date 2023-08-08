@@ -24,31 +24,31 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 * [index.html](index.html) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![index.html](TESTING/W3C/index-w3.png) 
+   ![index](TESTING/W3C/index-w3.png) 
 </details>
 
 * [game.html](game.html) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![game.html](TESTING/W3C/game-w3.png) 
+   ![game](TESTING/W3C/game-w3.png) 
 </details>
 
 * [leaderboard.html](leaderboard.html) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![leaderboard.html](TESTING/W3C/leaderboard-w3.png) 
+   ![leaderboard](TESTING/W3C/leaderboard-w3.png) 
 </details>
 
 * [contact-form.html](contact-form.html) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![contact-form.html](TESTING/W3C/contact-w3.png) 
+   ![contact-form](TESTING/W3C/contact-w3.png) 
 </details>
 
 * [404.html](404.html) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![404.html](TESTING/W3C/404-w3.png) 
+   ![404](TESTING/W3C/404-w3.png) 
 </details>
 
 * [500.html](500.html) - Passed.
@@ -87,7 +87,7 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 * [email.js](assets/js/email.js) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![email.js](TESTING/jshint/email-jshint.png) 
+   ![email](TESTING/jshint/email-jshint.png) 
 </details>
 
 

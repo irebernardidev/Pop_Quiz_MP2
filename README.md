@@ -238,7 +238,7 @@ The following technologies were used in the development of the website:
 # Testing
 The website was tested thoroughly to ensure it is fully functional and user-friendly. The testing phase involved manual testing on different devices and browsers.
 
-Testing information can be found in a separate testing [file](TESTING/TESTING.md).
+Testing information can be found in a separate testing [file](TESTING.md).
 
 
 ## Deployment
