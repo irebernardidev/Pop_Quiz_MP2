@@ -61,6 +61,12 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 I utilized Chrome's Lighthouse tool to evaluate the website's performance, accessibility, adherence to best practices, and SEO optimization.
 
 ### Desktop Results
+Each page is achieving a score of 100 for the last two categories.
+* [Home Page](TESTING/Lighthouse/home-desk.png)
+* [Game Page](TESTING/Lighthouse/game-desk.png)
+* [Leaderboard Page](TESTING/Lighthouse/leaderboard-desk.png)
+* [Contact Page](TESTING/Lighthouse/contact-form-desk.png)
+
 
 ### Mobile Results
 
