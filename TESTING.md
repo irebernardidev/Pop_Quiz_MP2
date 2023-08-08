@@ -52,7 +52,7 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
   ![game.js](TESTING/jshint/game-jshint.png)
 
 * [leaderboards.js](assets/js/leaderboard.js) - Passed.
-  ![leaderboard.js](TESTING/jshint/leaerboard-jshint.png)
+  ![leaderboard.js](TESTING/jshint/leaderboard-jshint.png)
 
 * [email.js](assets/js/email.js) - Passed.
   ![email.js](TESTING/jshint/email-jshint.png)
@@ -74,5 +74,7 @@ Every page scores a perfect 100 in the final two categories. Meanwhile, three pa
 * [Leaderboard Page](TESTING/Lighthouse/leaderboard-mob.png)
 * [Contact Page](TESTING/Lighthouse/contact-form-mob.png)
 
+## Manual Testing
 
+### Testing User Stories
 
