@@ -91,7 +91,7 @@ Every page scores a perfect 100 in the final two categories. Meanwhile, three pa
 |------------|------------|
 | I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site.   | Users can choose their preferred level of difficulty and timer length, as well as the topic before starting the game. After completing a round, they have the flexibility to select a different level of difficulty, timer duration, or topic for their subsequent games.  |
 
-<mark>Frequent Visitors</mark>
+`Frequent Visitors`
 
 | Goals   | How are they achieved?  |
 |------------|------------|
