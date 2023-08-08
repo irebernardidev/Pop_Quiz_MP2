@@ -18,18 +18,12 @@ closeModal.addEventListener("click", () => {
 var modal = document.getElementById("modal-container");
 var mainContainer = document.getElementById("outer-container");
 
-document.getElementById("open-modal").addEventListener("click", function() {
-    modal.classList.add('show');
-    mainContainer.classList.add('blur-effect');
+document.getElementById("open-modal").addEventListener("click", function () {
+  modal.classList.add('show');
+  mainContainer.classList.add('blur-effect');
 });
 
-document.getElementById("close-modal").addEventListener("click", function() {
-    modal.classList.remove('show');
-    mainContainer.classList.remove('blur-effect');
+document.getElementById("close-modal").addEventListener("click", function () {
+  modal.classList.remove('show');
+  mainContainer.classList.remove('blur-effect');
 });
-
-
-
-
-
-

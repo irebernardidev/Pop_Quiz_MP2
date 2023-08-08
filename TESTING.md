@@ -69,5 +69,25 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 * [script.js](assets/js/script.js) - Passed.
 <details>
   <summary>Click to see result!</summary>
-   ![script.js](TESTING/jshint/script.js.png) 
+   ![script.js](TESTING/jshint/script-jshint.png) 
 </details>
+
+* [game.js](assets/js/game.js) - Passed.
+<details>
+  <summary>Click to see result!</summary>
+   ![game.js](TESTING/jshint/game-jshint.png) 
+</details>
+
+* [leaderboards.js](assets/js/leaderboard.js) - Passed.
+<details>
+  <summary>Click to see result!</summary>
+   ![leaderboard.js](TESTING/jshint/leaderboard-jshint.png) 
+</details>
+
+* [email.js](assets/js/email.js) - Passed.
+<details>
+  <summary>Click to see result!</summary>
+   ![email.js](TESTING/jshint/email-jshint.png) 
+</details>
+
+
