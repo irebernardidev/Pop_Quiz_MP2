@@ -33,4 +33,4 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 
 * ![500.html](TESTING/W3C/500-w3.png) - Passed.
 
-* ![style.css](TESTING/W3C/css-w3.png)
+* ![style.css](TESTING/W3C/style.css.png) - Passed.
