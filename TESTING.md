@@ -22,72 +22,46 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
 * [index.html](index.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![index](TESTING/W3C/index-w3.png) 
-</details>
+  ![index.html](TESTING/W3C/index-w3.png)
 
 * [game.html](game.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![game](TESTING/W3C/game-w3.png) 
-</details>
+  ![game.html](TESTING/W3C/game-w3.png)
 
 * [leaderboard.html](leaderboard.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![leaderboard](TESTING/W3C/leaderboard-w3.png) 
-</details>
+  ![leaderboard.html](TESTING/W3C/leaderboard-w3.png)
 
 * [contact-form.html](contact-form.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![contact-form](TESTING/W3C/contact-w3.png) 
-</details>
+  ![contact-form.html](TESTING/W3C/contact-w3.png)
 
 * [404.html](404.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![404](TESTING/W3C/404-w3.png) 
-</details>
+ ![404.html](TESTING/W3C/404-w3.png)
 
 * [500.html](500.html) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![500.html](TESTING/W3C/500-w3.png) 
-</details>
+  ![500.html](TESTING/W3C/500-w3.png)
 
 * [style.css](assets/css/style.css) - Passed, no errors found.
-<details>
-  <summary>Click to see result!</summary>
-   ![style.css](TESTING/W3C/style.css.png) 
-</details>
+  ![style.css](TESTING/W3C/style.css.png)
 
 ### JavaScript Validator
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
 * [script.js](assets/js/script.js) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![script.js](TESTING/jshint/script-jshint.png) 
-</details>
+  ![script.js](TESTING/jshint/script-jshint.png)
 
 * [game.js](assets/js/game.js) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![game.js](TESTING/jshint/game-jshint.png) 
-</details>
+  ![game.js](TESTING/jshint/game-jshint.png)
 
 * [leaderboards.js](assets/js/leaderboard.js) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![leaderboard.js](TESTING/jshint/leaderboard-jshint.png) 
-</details>
+  ![leaderboard.js](TESTING/jshint/leaerboard-jshint.png)
 
 * [email.js](assets/js/email.js) - Passed.
-<details>
-  <summary>Click to see result!</summary>
-   ![email](TESTING/jshint/email-jshint.png) 
-</details>
+  ![email.js](TESTING/jshint/email-jshint.png)
+
+### Lighthouse
+I utilized Chrome's Lighthouse tool to evaluate the website's performance, accessibility, adherence to best practices, and SEO optimization.
+
+### Desktop Results
+
+### Mobile Results
 
 
