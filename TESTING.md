@@ -77,7 +77,7 @@ Every page scores a perfect 100 in the final two categories. Meanwhile, three pa
 ## Manual Testing
 
 ### Testing User Stories
-<mark>First Time Visitors</mark>
+`First Time Visitors`
 
 | Goals   | How are they achieved?  |
 |------------|------------|
@@ -85,7 +85,7 @@ Every page scores a perfect 100 in the final two categories. Meanwhile, three pa
 | I want the site to be responsive to my device.    | I have developed the site with responsiveness in mind.  |
 | I want the site to be easy to navigate.    | Buttons are used throughout the site for navigation, much like a mobile app. As the site is like a mobile app - Buttons are prevalent across the site, providing an experience akin to a mobile app. In aiming for an app-like feel, I opted against making it resemble a conventional webpage. Additionally, the page title serves as a link to the home page.   |
 
-<mark>Returning Visitors</mark>
+`Returning Visitors`
 
 | Goals   | How are they achieved?  |
 |------------|------------|
@@ -117,7 +117,7 @@ Each device tested the site using the following browsers:
 
 Friends and family conducted further testing across various devices and screen sizes, and they encountered no issues during gameplay.
 
-<mark>Home Page</mark>
+`Home Page`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | The Sites title     | Link directs the user back to the home page   | Clicked title| 	Home page reloads  | Pass    |
@@ -128,7 +128,20 @@ Friends and family conducted further testing across various devices and screen s
 | All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
 | Reach Out button     | Directs the user to the Contact page, the page opens in a new tab    | Clicked on button | Contact page opens in separate tab | Pass |
 
-<mark>Game Page - Difficulty, Topic, Time Selection</mark>
+`Game Page - Difficulty, Category, Time Selection`
+| Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
+|---------|-----------|------------|--------|--------------|
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
+| Category Dropdown    | Check if category options are populated dynamically via JavaScript   | Clicked on category box | Dropdow list of all categories displays  | Pass |
+| Difficulty Dropdown | Verify the options of Easy, Medium, and Hard | Clicked on difficulty box | Dropdow list of all difficulties displays  | Pass |  
+| Questions Dropdown | Validate that user can choose between 5, 10, 15, and 20 questions | Clicked on Questions box | Dropdow list of Questions number displays  | Pass |     
+| Timer Dropdown | Ensure timer dropdown options from 5 to 30 seconds | Clicked on Timer box | Dropdow list of Timer lenght options displays  | Pass |     
+
+
+
+
+`Game Page - Quiz Area`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | 001     | Test A    | 2023-08-08 | Pass   | No issues    |
@@ -138,7 +151,7 @@ Friends and family conducted further testing across various devices and screen s
 
 
 
-<mark>Game Page - Quiz Area</mark>
+`Game Page - End of Quiz`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | 001     | Test A    | 2023-08-08 | Pass   | No issues    |
@@ -147,8 +160,7 @@ Friends and family conducted further testing across various devices and screen s
 | ...     | ...       | ...        | ...    | ...          |
 
 
-
-<mark>Game Page - End of Quiz</mark>
+`404 Error Page`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | 001     | Test A    | 2023-08-08 | Pass   | No issues    |
@@ -157,16 +169,7 @@ Friends and family conducted further testing across various devices and screen s
 | ...     | ...       | ...        | ...    | ...          |
 
 
-<mark>404 Error Page</mark>
-| Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
-|---------|-----------|------------|--------|--------------|
-| 001     | Test A    | 2023-08-08 | Pass   | No issues    |
-| 002     | Test B    | 2023-08-09 | Fail   | Some issues  |
-| 003     | Test C    | 2023-08-10 | Pass   | Minor issues |
-| ...     | ...       | ...        | ...    | ...          |
-
-
-<mark>500 Error Page</mark>
+`500 Error Page`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | 001     | Test A    | 2023-08-08 | Pass   | No issues    |
