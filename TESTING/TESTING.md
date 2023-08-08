@@ -21,16 +21,16 @@ To verify adaptability, I employed Google Chrome Developer Tools and Firefox's I
 ### W3C Validator
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* ![index.html](TESTING/W3C/index-w3.png)
+* ![index.html](TESTING/W3C/index-w3.png) - Passed.
 
-* ![game.html](TESTING/W3C/game-w3.png)
+* ![game.html](TESTING/W3C/game-w3.png) - Passed.
 
-* ![leaderboard.html](TESTING/W3C/leaderboard-w3.png)
+* ![leaderboard.html](TESTING/W3C/leaderboard-w3.png) - Passed.
 
-* ![contact-form.html](TESTING/W3C/contact-w3.png)
+* ![contact-form.html](TESTING/W3C/contact-w3.png) - Passed.
 
-* ![404.html](TESTING/W3C/404-w3.png)
+* ![404.html](TESTING/W3C/404-w3.png) - Passed.
 
-* ![500.html](TESTING/W3C/500-w3.png)
+* ![500.html](TESTING/W3C/500-w3.png) - Passed.
 
 * ![style.css](TESTING/W3C/css-w3.png)

@@ -1,3 +1,4 @@
+// tutorial used [Medium- Jeffrey Martinez](https://martinezjf2.medium.com/how-to-setup-emailjs-33809350f0f8) - setting up EmailJS.
 // Initialize EmailJS with your user ID
 emailjs.init('zn6LDYixJTe5o00_B'); 
 
