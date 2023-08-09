@@ -154,26 +154,39 @@ The leaderboard page of Quiz Pro Quo displays a sorted list of players and their
 ![leaderboard Buttons](documentation/features/leaderboard-buttons.png)
 
 ### The Contact Page
-The Contact Us page provides a way for users to get in touch with the developers or administrators of the Quiz Pro Quo. It contains a simple form that collects the user's name, email, and a message.
+The contact page provides users with an interface to send messages directly through the website. The form captures the user's name, email, and their message. Upon submission, it sends the message to the designated recipient and provides an auto-reply to the user.
 ![Contact Page](documentation/features/contact-page.png)
 
 Upon submitting the form, an email will be sent to the designated recipient via [EmailJS](https://www.emailjs.com/), a service that helps send emails using client side technologies only.
 This is handled by the following JavaScript code:
-![EmailJS](documentation/features/email-js.png)
+![EmailJS](documentation/features/emailjs.png)
 
-In the above code, we first initialize EmailJS with a user ID (zn6LDYixJTe5o00_B), which is used to send emails from the browser.
+This section integrates EmailJS to send emails and is divided into multiple parts:
 
-The submit event is attached to the form, and when the form is submitted, the default form submission is prevented using event.preventDefault();.
+1.  Initialization:
+  * EmailJS is initialized with a unique user ID.
+2. Main Contact Email:
+  * An event listener is attached to the contact form. When the form is submitted:
 
-Then, the emailjs.sendForm() function is used to send the form data to the specified email service. The function takes four arguments: the service ID, the template ID, the form, and the user ID.
+    2.1. Default form submission behavior is prevented.
 
-Once the email has been successfully sent, the promise resolves and a message is displayed to the user. If there was an error sending the email, the promise is rejected and an error message is displayed.
+    2.2. An email is sent to the intended recipient using the details from the form.
+
+    2.3. Upon successful email sending, an auto-reply function is triggered to notify the user. If there's an error, the user is alerted.
+
+3. Auto-reply Email:
+
+  * This function sends a thank you message to the user once they've submitted the contact form.
+  * User's email and name are retrieved from the form.
+  * A message template is prepared with the user's name, thanking them for reaching out and ensuring a follow-up.
+  * An email is sent using EmailJS, and if successful, an alert confirms the action. The form fields are then cleared for better user experience. Any errors during the process result in an error alert to the user.
+
 ![Email Successfully Sent](documentation/features/email-sent.png)
+![Message received in Dev inbox](documentation/features/dev-inbox.png)
+![Message received in User inbox](documentation/features/user-inbox.png)
+
 
 Lastly, the form fields are cleared out in preparation for the next message.
-
-In the contact-form.html page, the form's action is not specified, as the action is handled by the EmailJS library and not a traditional server-side processing script.
-
 
 ### The 404 Error Page
 The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. The user can click on Home button or title to redirect themselves to the home page.
