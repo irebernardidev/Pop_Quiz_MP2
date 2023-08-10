@@ -7,6 +7,13 @@ function displayLeaderboard() {
 
   let leaderboard = JSON.parse(localStorage.getItem('scores')) || [];
 
+  // Check if the leaderboard is empty and hide the 'Play Again?' button
+  if (leaderboard.length === 0) {
+    backButton.style.display = 'none';
+  } else {
+    backButton.style.display = 'block'; // Ensure the button is visible when there are leaderboard entries
+  }
+
   leaderboard.sort((a, b) => b.score - a.score || new Date(a.time) - new Date(b.time));
 
   leaderboard.forEach((entry, index) => {
