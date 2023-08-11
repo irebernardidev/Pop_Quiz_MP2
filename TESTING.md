@@ -128,26 +128,26 @@ Friends and family conducted further testing across various devices and screen s
 | All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
 | Reach Out button     | Directs the user to the Contact page, the page opens in a new tab    | Clicked on button | Contact page opens in separate tab | Pass |
 
-`Game Page - Difficulty, Category, Time Selection`
+`Game Page - Difficulty, Category, Number of Questions and Time Selection`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
 | All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
 | Category Dropdown    | Check if category options are populated dynamically via JavaScript   | Clicked on category box | Dropdow list of all categories displays  | Pass |
 | Difficulty Dropdown | Verify the options of Easy, Medium, and Hard | Clicked on difficulty box | Dropdow list of all difficulties displays  | Pass |  
-| Questions Dropdown | Validate that user can choose between 5, 10, 15, and 20 questions | Clicked on Questions box | Dropdow list of Questions number displays  | Pass |     
+| Questions Dropdown | Validate that user can choose between 5, 10, 15, and 20 questions | Clicked on Questions box | Dropdow list of Questions number displays  | Pass |  
+| Difficulty Dropdown | Ensure difficulty dropdown options from Easy, Medium and Hard | Clicked on Difficulty box | Dropdow list of Easy, Medium and Hard options displays  | Pass |       
 | Timer Dropdown | Ensure timer dropdown options from 5 to 30 seconds | Clicked on Timer box | Dropdow list of Timer lenght options displays  | Pass |     
-
 
 
 
 `Game Page - Quiz Area`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
-| 001     | Test A    | 2023-08-08 | Pass   | No issues    |
-| 002     | Test B    | 2023-08-09 | Fail   | Some issues  |
-| 003     | Test C    | 2023-08-10 | Pass   | Minor issues |
-| ...     | ...       | ...        | ...    | ...          |
+| Start Quiz Button   | Quiz should start when the "Start Quiz" button is clicked.   | 2023-08-08 | Pass   | No issues    |
+| Question populated    | Questions should fetch from the Open Trivia DB API based on the user's selected category, difficulty, and number of questions.   | 2023-08-09 | Fail   | Some issues  |
+| Mute Functionality     | Check if clicking the mute button mutes and unmutes the game sounds.   | 2023-08-10 | Pass   | Minor issues |
+| Quit button  | The "Quit" button should prompt the user for confirmation. If confirmed, the game should redirect to index.html.   | ...        | ...    | ...          |
 
 
 
