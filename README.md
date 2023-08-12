@@ -144,6 +144,10 @@ Once the quiz starts, they are timed per question and must answer within the sti
 ![Start Game](documentation/features/start-quiz.png)
 ![Timer and Feedback](documentation/features/timer-answer.png)
 
+Players can choose to enable or disable the sound before starting the game. They can also adjust this setting during the game by clicking the sound icon at the bottom of the page.
+![Sound On](documentation/features/sound-on.png)
+![No Sound](documentation/features/no-sound.png)
+
 End your game with your score and a motivating message based on your performance. Players can then restart the game or go back to Home page.
 ![Motivating Message](documentation/features/message.png)
 
