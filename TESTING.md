@@ -144,10 +144,16 @@ Friends and family conducted further testing across various devices and screen s
 `Game Page - Quiz Area`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
-| Start Quiz Button   | Quiz should start when the "Start Quiz" button is clicked.   | 2023-08-08 | Pass   | No issues    |
-| Question populated    | Questions should fetch from the Open Trivia DB API based on the user's selected category, difficulty, and number of questions.   | 2023-08-09 | Fail   | Some issues  |
-| Mute Functionality     | Check if clicking the mute button mutes and unmutes the game sounds.   | 2023-08-10 | Pass   | Minor issues |
-| Quit button  | The "Quit" button should prompt the user for confirmation. If confirmed, the game should redirect to index.html.   | ...        | ...    | ...          |
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| Start Quiz Button   | Quiz should start when the "Start Quiz" button is clicked.   | Clicked Start button | Game starts as expected   | Pass    |
+| Next Question Button   | Display the next question when clicked after choosing an answer  | Answer Quiz question and clicked Next button | Next question displays   | Pass    |
+| Timer Functionality   | The timer should countdown from the set time. When it reaches zero, the quiz should be automatically submitted.  | Start the quiz by pressing the "Start Quiz" button and observe the initial display of the timer, allow the timer to run until it reaches zero  | As soon as the timer hits zero, the quiz is automatically submitted   | Pass |
+| Multiple Choice Selection   | User should be able to select only one option. When one option is clicked, any other option should be disabled.  | Clicked on one of the multiple choice options, confirmed that the chosen option is visibly selected. After selecting one option, tried to select another option.   | User can't select another option   | Pass |
+| Correct/Incorrect Answer Colours   | The selected answer should be highlighted with the colour designated for correct answers, green for correct and red for incorrect.  | Navigate to a question. Select the known correct answer. Then select an answer that is known to be incorrect.   | The selected answer is highlighted with the colour designated for correct or incorrect answers   | Pass |
+| Question populated    | Questions should fetch from the Open Trivia DB API based on the user's selected category, difficulty, and number of questions.   | Begin by choosing a specific category, difficulty, and number of questions. For example, select "Science: Computers", "Medium" difficulty, and "10" questions. Trigger the functionality in the application that requests questions from the API by starting the quiz. | Questions are displayed in the application's user interface. The questions match the selected category (e.g., questions are related to "Science: Computers"), the difficulty of the questions corresponds to the chosen difficulty level and the number of questions matches the user's selection (e.g., 10 questions). | Pass  |
+| Mute Functionality     | Check if clicking the mute button mutes and unmutes the game sounds.   | Ensure that the device's volume is turned up and not on silent mode. Launch the game/application and ensure that the default game sounds are audible. Click or tap on the mute button. | The game sounds are immediately silenced upon clicking the mute button.  | Pass |
+| Quit button  | The "Quit" button should prompt the user for confirmation. If confirmed, the game should redirect to index.html.   | Upon clicking the "Quit" button, a confirmation dialog/prompt should appear, asking the user if they truly want to quit the game.      | Clicked the "Quit" button during gameplay.    | If the user confirms quit the game immediately halt all gameplay processes and activities. Redirect or navigate the user to the index.html page. If the user declines the confirmation, the confirmation dialog should close and the game continues without any disruptions. | Pass |
+         
 
 
 
