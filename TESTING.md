@@ -127,6 +127,7 @@ Friends and family conducted further testing across various devices and screen s
 | Leaderboard button    | Directs the user to Leaderboard page   | Clicked on button | Directs to the Leaderboard page   | Pass   |
 | All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
 | Reach Out button     | Directs the user to the Contact page, the page opens in a new tab    | Clicked on button | Contact page opens in separate tab | Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
 
 `Game Page - Difficulty, Category, Number of Questions and Time Selection`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
@@ -138,6 +139,7 @@ Friends and family conducted further testing across various devices and screen s
 | Questions Dropdown | Validate that user can choose between 5, 10, 15, and 20 questions | Clicked on Questions box | Dropdow list of Questions number displays  | Pass |  
 | Difficulty Dropdown | Ensure difficulty dropdown options from Easy, Medium and Hard | Clicked on Difficulty box | Dropdow list of Easy, Medium and Hard options displays  | Pass |       
 | Timer Dropdown | Ensure timer dropdown options from 5 to 30 seconds | Clicked on Timer box | Dropdow list of Timer lenght options displays  | Pass |     
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
 
 
 
@@ -145,6 +147,7 @@ Friends and family conducted further testing across various devices and screen s
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
 | The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
 | Start Quiz Button   | Quiz should start when the "Start Quiz" button is clicked.   | Clicked Start button | Game starts as expected   | Pass    |
 | Next Question Button   | Display the next question when clicked after choosing an answer  | Answer Quiz question and clicked Next button | Next question displays   | Pass    |
 | Timer Functionality   | The timer should countdown from the set time. When it reaches zero, the quiz should be automatically submitted.  | Start the quiz by pressing the "Start Quiz" button and observe the initial display of the timer, allow the timer to run until it reaches zero  | As soon as the timer hits zero, the quiz is automatically submitted   | Pass |
@@ -153,32 +156,46 @@ Friends and family conducted further testing across various devices and screen s
 | Question populated    | Questions should fetch from the Open Trivia DB API based on the user's selected category, difficulty, and number of questions.   | Begin by choosing a specific category, difficulty, and number of questions. For example, select "Science: Computers", "Medium" difficulty, and "10" questions. Trigger the functionality in the application that requests questions from the API by starting the quiz. | Questions are displayed in the application's user interface. The questions match the selected category (e.g., questions are related to "Science: Computers"), the difficulty of the questions corresponds to the chosen difficulty level and the number of questions matches the user's selection (e.g., 10 questions). | Pass  |
 | Mute Functionality     | Check if clicking the mute button mutes and unmutes the game sounds.   | Ensure that the device's volume is turned up and not on silent mode. Launch the game/application and ensure that the default game sounds are audible. Click or tap on the mute button. | The game sounds are immediately silenced upon clicking the mute button.  | Pass |
 | Quit button  | The "Quit" button should prompt the user for confirmation. If confirmed, the game should redirect to index.html.   | Upon clicking the "Quit" button, a confirmation dialog/prompt should appear, asking the user if they truly want to quit the game.      | Clicked the "Quit" button during gameplay.    | If the user confirms quit the game immediately halt all gameplay processes and activities. Redirect or navigate the user to the index.html page. If the user declines the confirmation, the confirmation dialog should close and the game continues without any disruptions. | Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
          
-
 
 
 `Game Page - End of Quiz`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
-| 001     | Test A    | 2023-08-08 | Pass   | No issues    |
-| 002     | Test B    | 2023-08-09 | Fail   | Some issues  |
-| 003     | Test C    | 2023-08-10 | Pass   | Minor issues |
-| ...     | ...       | ...        | ...    | ...          |
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
+| End of the Quiz    | The end screen should correctly display the user's score and a feedback message depending on the score achieved.   | Completed all the questions in the quiz | End screen correctly showcases the total score achieved by the user and a feedback message  | Pass  |
+| Play again? button	| Clicking on this button will return you to the start of the game page where you can select the quiz topic, number of questions, timer lenght and difficulty levels |	Clicked on the play again? button	| Directed to the beginning of the game to select the quiz topic, number of questions, timer lenght and difficulty levels	| Pass |
+Home button	| Clicking on this button will take you back to the home page	| Clicked the home button	| Directed back to the home page	| Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
+
+`Leaderboard Page`
+| Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
+|---------|-----------|------------|--------|--------------|
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| All buttons - hover effect   | All light purple buttons with white text and teal color border should change to light teal with white text and purple color border when hovered over.   | Hover over each button on the page | Each button displayed the correct styling when hovered over  | Pass  |
+| Score Displayed   | If there are scores saved in the local storage, they should be listed in descending order based on the score. For scores with the same value, they are sorted based on the time. Each entry displays rank, name, score, and time.   | Completed all the questions in the quiz, entered name in Leaderboard after completing the game | Page loads without errors, each entry displays rank, name, score, and time  | Pass  |
+| Play again? button hidden	| 'Play Again?' button is hidden when the leaderboard list is empty. |	Cleared local storage manually and open Leaderboard Page	| The leaderboard list is empty and 'Play Again?' button is hidden.	| Pass |
+| Play again? button	| Clicking on this button will return you to the start of the game page where you can select the quiz topic, number of questions, timer lenght and difficulty levels |	Clicked on the play again? button	| Directed to the beginning of the game to select the quiz topic, number of questions, timer lenght and difficulty levels	| Pass |
+Home button	| Clicking on this button will take you back to the home page	| Clicked the home button	| Directed back to the home page	| Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
+
 
 
 `404 Error Page`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
-| 001     | Test A    | 2023-08-08 | Pass   | No issues    |
-| 002     | Test B    | 2023-08-09 | Fail   | Some issues  |
-| 003     | Test C    | 2023-08-10 | Pass   | Minor issues |
-| ...     | ...       | ...        | ...    | ...          |
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| 404 Error message    | 404 Error message ("[404 error]") is visible and appropriately sized   | Manually entered a wrong URL on the website. | 404 Error message ("[404 error]") is visible and appropriately sized. The "Go back Home" link is visible and correctly styled and the descriptive message ("Oops! The page you're looking for must have gone on vacation.") is clear and readable.   | Pass   |
+"Go back Home" link 	| Clicking on this link will take you back to the home page	| Clicked the home link	| Directed back to the home page	| Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |
 
 
 `500 Error Page`
 | Feature | Expected Outcome | Testing Performed      | Result | Pass/Fail      |
 |---------|-----------|------------|--------|--------------|
-| 001     | Test A    | 2023-08-08 | Pass   | No issues    |
-| 002     | Test B    | 2023-08-09 | Fail   | Some issues  |
-| 003     | Test C    | 2023-08-10 | Pass   | Minor issues |
-| ...     | ...       | ...        | ...    | ...          |
+| The Sites | title	Link directs the user back to the home page	| Clicked title	| Directed back to home page	| Pass   |
+| 500 - Internal Server Error message    | 500 Internal Server Error message is visible and appropriately sized     | Caused a syntax error in the server-side script by omitting a semicolon at the end of a statement or use undeclared variables. | 500 Internal Server Error message ("[500 - Internal Server Error]") is visible and appropriately sized. The "Go back Home" link is visible and correctly styled and the descriptive message ("Oops! Something went wrong.") is clear and readable.   | Pass    |
+"Go back Home" link 	| Clicking on this link will take you back to the home page	| Clicked the home link	| Directed back to the home page	| Pass |
+| Footer and Social media icons     | Social media icons in the footer redirect to their respective platforms in a new tab.  | Clicked on each Social media icon | social media page opens in separate tab | Pass |

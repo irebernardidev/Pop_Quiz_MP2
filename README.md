@@ -149,7 +149,7 @@ End your game with your score and a motivating message based on your performance
 
 
 ### The Leaderboard Page
-The leaderboard page of Quiz Pro Quo displays a sorted list of players and their scores. Players are ranked according to their score, with the time of completion serving as a tie-breaker. It also provides a 'Play Again?' button to redirect the user to the game page, and a 'Home' button to return to the home page.
+The leaderboard page of Quiz Pro Quo displays a sorted list of players and their scores. Players are ranked according to their score, with the time of completion serving as a tie-breaker. It also provides a 'Play Again?' button to redirect the user to the game page, and a 'Home' button to return to the home page. 'Play Again?' button is hidden when the leaderboard list is empty.
 ![Leaderboard Page](documentation/features/leaderboard.png)
 ![leaderboard Buttons](documentation/features/leaderboard-buttons.png)
 
@@ -185,8 +185,6 @@ This section integrates EmailJS to send emails and is divided into multiple part
 ![Message received in Dev inbox](documentation/features/dev-inbox.png)
 ![Message received in User inbox](documentation/features/user-inbox.png)
 
-
-Lastly, the form fields are cleared out in preparation for the next message.
 
 ### The 404 Error Page
 The 404 error page displays the sites name as a title. This also acts as a link back to the home page. Within the page there is a sorry message explaining to the user that there has been an error directing them to the page they were looking for. The user can click on Home button or title to redirect themselves to the home page.
