@@ -145,6 +145,7 @@ Once the quiz starts, they are timed per question and must answer within the sti
 ![Timer and Feedback](documentation/features/timer-answer.png)
 
 Players can choose to enable or disable the sound before starting the game. They can also adjust this setting during the game by clicking the sound icon at the bottom of the page.
+
 ![Sound On](documentation/features/sound-on.png)
 ![No Sound](documentation/features/no-sound.png)
 
