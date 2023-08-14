@@ -103,10 +103,28 @@ Full testing was performed on the following devices:
 
 * Laptop:
   * MacBook Air (13-inch, 2017)
+  * Desktop
 * Mobile Devices:
   * iPhone 14 pro.
   * iPhone 13 pro.
   * iPhone 8.
+  * iPad Air
+  * iPad Mini  
+  
+
+
+| Screen size | Device | Performance |
+|-------------|----------------|-------------|
+| 13-inch    | MacBook Air      | Good        |
+| 393px   | iPhone 14 Pro      | Good    |
+| 390px   | iPhone 13 Pro      | Good  |
+| 375px   | iPhone 8       | Good        |
+| 820px   | iPad Air      | Good    |
+| 768px   | iPad Mini       | Good        |
+| 1201px   | Desktop     | Good  |
+| 2000px   | Desktop       | Good        |
+
+
 
 Each device tested the site using the following browsers:
 * Google Chrome
@@ -114,6 +132,15 @@ Each device tested the site using the following browsers:
 * Firefox
 * Edge
 * Opera
+
+| Browser | Performance |
+|-------------|----------------|
+|  Google Chrome      | Good        |
+| Safari   |  Good    |
+| Firefox   |  Good  |
+| Edge  | Good        |
+| Opera   |  Good    |
+
 
 Friends and family conducted further testing across various devices and screen sizes, and they encountered no issues during gameplay.
 
