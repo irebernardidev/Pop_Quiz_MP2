@@ -104,7 +104,7 @@ The Quiz Pro Quo website primarily relies on a text-based interface to create a 
   * [Favicon](https://www.favicon.cc/): A unique favicon is provided that is representative of the brand identity. It's visible in the browser tab for easy site identification.
 
 ## Wireframes
-Wireframes were created for mobile, tablet and desktop using [Balsamiq](https://balsamiq.com/).
+Wireframes were created for mobile, tablet and desktop using [Balsamiq](https://balsamiq.com/). Please note some improvements were made during the development of the website.
 
 [Wireframes](documentation/wireframes)
 
