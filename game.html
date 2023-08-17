@@ -22,6 +22,7 @@
     <a href="index.html">
     <img class="logo" src="assets/images/logo.png" alt="logo">
     </a>
+    <!-- Quiz Header -->
     <div id="quiz-container" class="quiz-container">
       <div class="quiz-header">
         <h1 id="quiz-title" class="quiz-title">Quiz Pro Quo</h1>
@@ -30,6 +31,7 @@
           <p id="questions-left"></p>
         </div>
       </div>
+      <!-- Quiz Settings -->
       <div id="settings-container" class="settings-container">
         <select id="category" name="category">
           <!-- Category options will be filled by JavaScript -->
@@ -60,16 +62,19 @@
       <div id="progress-container" class="progress-container">
         <div id="progress-bar" class="progress-bar"></div>
       </div>
+      <!-- Quiz Questions -->
       <div id="question-container" class="question-container" hidden>
         <p id="timer-countdown" class="timer-countdown"></p>
         <p id="question" class="question"></p>
         <div id="choice-container" class="choice-container">
         </div>
       </div>
+      <!-- Congratulations Message -->
       <div id="congratulation" style="display: none;">
         <h1>Congratulations!</h1>
         <p>You scored 100%!</p>
       </div>
+      <!-- Quiz Control Buttons -->
       <div class="quiz-footer">
         <button id="next-btn" class="next-btn" hidden>Next</button>
         <button id="quit-btn" class="quit-btn" hidden>Quit</button>
@@ -79,11 +84,12 @@
         <a href="index.html" class="btn">Home</a>
         <i id="mute-btn" class="fas fa-volume-up"></i>
       </div>
+      <!-- Sounds -->
       <audio id="correct-sound" src="assets/sound/correct-sound.wav" ></audio>
       <audio id="wrong-sound" src="assets/sound/wrong-sound.wav" ></audio>
       <audio id="congrats-music" src="assets/sound/congrats-music.wav" ></audio>
     </div>
-    <!-- Footer -->
+    <!-- Footer with Social Links -->
     <footer class="footer">
       <div class="social-links">
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
