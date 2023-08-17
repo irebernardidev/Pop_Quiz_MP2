@@ -37,8 +37,9 @@ Find the final project here: [Quiz Pro Quo](https://irebernardidev.github.io/Qui
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Welcome to the Quiz Pro Quo repository! Dive into an interactive quiz experience that tests your knowledge on pop culture, from trending music hits to iconic movies throughout the decades. Built with the pillars of web development - HTML, CSS, and JavaScript - this project offers a seamless and engaging quiz interface fit for both casual pub goers and trivia enthusiasts alike.
-Whether you're looking to host a fun evening with friends, or simply challenge your own knowledge on pop culture, the Pop Pub Quiz is the perfect web-based trivia game for you. Dive in, have fun, and may the best pop culture aficionado win!
+
+Welcome to the Quiz Pro Quo repository! Dive into an interactive quiz experience that tests your knowledge on pop culture, from trending music hits to iconic movies throughout the ages. Crafted using the foundational elements of web development - HTML, CSS, and JavaScript - this project presents a smooth and captivating quiz platform suitable for both casual quiz takers and trivia enthusiasts.
+Whether you're planning a fun virtual gathering with friends or aiming to challenge your own grasp of pop culture, Quiz Pro Quo is the ultimate online trivia game for you. Dive in, have fun, and may the best pop culture aficionado win!
 
 This website was made for the second of four Milestone projects required to complete the Diploma in Software development program at The Code Institute.
 ## User Experience
@@ -72,7 +73,7 @@ The color scheme adopted for this application provides a balance between attract
 
 - Primary Color (#a881af): This muted purple tone is used extensively throughout the application to provide a calming effect and to maintain a consistent visual identity. It is used in areas such as headers, footers, buttons, and borders.
 
-- Accent Color (#5adbb5): This light teal color is utilized for accenting and highlighting certain elements of the UI such as button hover effects and correct choices, providing a lively contrast to the primary color.
+- Accent Color (#5adbb5): This light teal color is utilized for accenting and highlighting certain elements of the UI such as button hover effects, providing a lively contrast to the primary color.
 
 - Background Color (rgba(255, 255, 255, 0.5)): A slightly transparent white is used as the background color for containers, ensuring readability while maintaining a light and airy aesthetic.
 
@@ -157,6 +158,7 @@ End your game with your score and a motivating message based on your performance
 The leaderboard page of Quiz Pro Quo displays a sorted list of players and their scores. Players are ranked according to their score, with the time of completion serving as a tie-breaker. It also provides a 'Play Again?' button to redirect the user to the game page, and a 'Home' button to return to the home page. 'Play Again?' button is hidden when the leaderboard list is empty.
 ![Leaderboard Page](documentation/features/leaderboard.png)
 ![leaderboard Buttons](documentation/features/leaderboard-buttons.png)
+![leaderboard Buttons](documentation/features/play-hidden.png)
 
 ### The Contact Page
 The contact page provides users with an interface to send messages directly through the website. The form captures the user's name, email, and their message. Upon submission, it sends the message to the designated recipient and provides an auto-reply to the user.
@@ -239,7 +241,7 @@ The following technologies were used in the development of the website:
 - JS 
 
 ### Frameworks, Libraries & Programs Used
-- [Bootstrap 5.3.0](https://getbootstrap.com/) was used multiple times during the development of the project.
+- [Bootstrap 5.3.0](https://getbootstrap.com/) 
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design phase of the project.
 - [GitHub](https://github.com/) was used to store the project after pushing.
 - [Google Fonts](https://fonts.google.com/) was used to import the font "Roboto" into the style.css file. This font was used throughout the project.
@@ -250,6 +252,8 @@ The following technologies were used in the development of the website:
 - [Favicon](https://www.favicon.cc/) was used to create a favicon to help users quickly identify a website when multiple tabs are open or when searching through bookmarks.
 - [Visual Studio Code](https://code.visualstudio.com/download) was used to create files pages and produce the code for the project.
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) was used during the testing phase to test the responsiveness of the site and to check for any bugs.
+- [TinyPNG](https://tinypng.com/) was used to compress images.
+- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) a google chrome extension to enable you to view JSON as raw data or parsed.
 
 
 # Testing
@@ -316,7 +320,7 @@ The developer consulted multiple sites in order to better understand the code th
 
 ## Acknowledgements
 
-I would like to thank my tutor, Peter, and my mentor, Seun, for their invaluable help and guidance throughout the process.
+I want to express my deepest appreciation to my mentor, Seun, for her steadfast support and invaluable insights throughout this journey. I also thank the CI Slack community for their useful advice and suggestions, and to Peter for his tutoring.
 
 [Back to top](#top)
 
