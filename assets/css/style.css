@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Roboto', sans-serif;
   color: #333;
   background-image: url('../images/yellow-question-mark.jpg');
@@ -31,6 +30,7 @@ body {
   margin-bottom: 80px;
 }
 
+/* Headers and footers for the quiz and leaderboard sections */
 .quiz-header,
 .quiz-footer,
 .leaderboard-header {
@@ -63,6 +63,7 @@ body {
   border-radius: 10px;
 }
 
+/* Styling the choice container for flexible layout */
 .choice-container {
   display: flex;
   flex-direction: column;
@@ -96,6 +97,7 @@ body {
   background-color: #FFCDD2;
 }
 
+/* Common button styles */
 .next-btn,
 .quit-btn,
 .start-btn,
@@ -113,6 +115,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Hover effects for the buttons */
 .next-btn:hover,
 .back-btn:hover,
 .start-btn,
@@ -243,7 +246,6 @@ h1 {
 
 .btn {
   font-size: 16px;
-  padding: 10px 20px;
   background: #a881af;
   border-color: #5adbb5;
   color: #fff;
@@ -252,7 +254,6 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  text-decoration: none;
   min-width: 120px;
   margin: 1rem 0.5rem;
   padding: 1rem;
@@ -633,6 +634,6 @@ textarea {
   .btn-group .btn {
     flex: 1;
     max-width: 23%;
-    
+
   }
 }
